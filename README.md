@@ -1,1 +1,0 @@
-# masahiro-mi.github.io
