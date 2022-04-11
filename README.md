@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Masahiro Mizukami, Ph.D.
 ## Researcher
 [Interaction Research Group](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html)
