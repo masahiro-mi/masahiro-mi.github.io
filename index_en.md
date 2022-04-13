@@ -22,11 +22,17 @@ Kyoto 619-0237, JAPAN
 
 
 ## Publication
-### Journal
+
+<details>
+<summary>Jouenal</summary>
+
 - Yoko Ishikawa, Masahiro Mizukami, Koichiro Yoshino, Sakriani Sakti, Yu Suzuki, Satoshi Nakamura (2018). Persuasive Dialog System Using Emotional Expressions. Transactions of the Japanese Society for Artificial Intelligence, 33-1, pp. 1-9.
 - Masahiro Mizukami, Lasguido Nio, Hideaki Kizuki, Toshio Nomura, Graham Neubig, Koichiro Yoshino, Sakriani Sakti, Tomoki Toda, Satoshi Nakamura (2016). Example Based Dialogue System Baased on Satisfaction Prediction. Transactions of the Japanese Society for Artificial Intelligence, 31-1, pp. 1-12.
 - Ryuichiro Higashinaka, Kotaro Funakoshi, Masahiro Araki, Hiroshi Tsukahara, Yuka Kobayashi, Masahiro Mizukami (2016). Text Chat Dialogue Corpus Construction and Analysis of Dialogue Breakdown. Journal of Natural Language Processing, 23-1, pp. 59-86.
 - Kyoshiro Sugiyama, Masahiro Mizukami, Graham Neubig, Koichiro Yoshino, Yu Suzuki, Satoshi Nakamura (2016). An Investigation of Machine Translation Evaluation Metrics in Cross-lingual Question Answering. Journal of Natural Language Processing, 23-5, pp. 437-461.
+  
+</details>
+
 
 ### Paper
 - Hiromi Narimatsu, Ryuichiro Higashinaka, Hiroaki Sugiyama, Masahiro Mizukami, Tsunehiro Arimoto (2019). Analyzing How a Talk Show Host Performs Follow-Up Questions for Developing an Interview Agent. 10th International Workshop on Spoken Dialogue Systems Technology.
