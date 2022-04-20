@@ -12,8 +12,7 @@ logo: /img/photo.jpg
 description: I'm a researcher, interested in Dialogue Systems and Individuality Modeling.
 
 markdown: CommonMarkGhPages
-CommonMarkGhPages:
-  parse_block_html: true
+parse_block_html: true
 
 
 sidebar:
@@ -23,3 +22,7 @@ sidebar:
   - name: GitHub
     icon: <i class="fa-brands fa-github"></i>
     link: https://github.com/masahiro-mi
+  - name: GitHub
+    icon: <i class="fa-brands fa-twitter"></i>
+    link: https://twitter.com/mima_tea
+    
