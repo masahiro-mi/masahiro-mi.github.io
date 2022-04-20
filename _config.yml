@@ -22,7 +22,10 @@ sidebar:
   - name: GitHub
     icon: <i class="fa-brands fa-github"></i>
     link: https://github.com/masahiro-mi
-  - name: GitHub
+  - name: Twitter
     icon: <i class="fa-brands fa-twitter"></i>
     link: https://twitter.com/mima_tea
+  - name: Blog
+    icon: <i class="fa-brands fa-blog"></i>
+    link: 
     
