@@ -5,15 +5,15 @@ remote_theme: BDHU/minimalist
 
 theme: jekyll-theme-minimal
 
-title: Masahiro MIZUKAMI - Personal Page
+title: Masahiro MIZUKAMI
 
 logo: /img/photo.jpg
 
-description: Masahiro MIZUKAMI is a researcher, interested in Chat-Oriented Dialogue System and Individuality Modeling (Linguistic, Dialogic).
+description: I'm a researcher, interested in Dialogue Systems and Individuality Modeling.
 
 markdown: CommonMarkGhPages
-#kramdown:
-#  parse_block_html: true
+CommonMarkGhPages:
+  parse_block_html: true
 
 
 sidebar:
