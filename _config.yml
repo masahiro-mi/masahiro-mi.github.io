@@ -11,10 +11,9 @@ logo: /img/photo.jpg
 
 description: Masahiro MIZUKAMI is a researcher, interested in Chat-Oriented Dialogue System and Individuality Modeling (Linguistic, Dialogic).
 
-markdown: kramdown
-
-kramdown:
-  parse_block_html: true
+markdown: CommonMarkGhPages
+#kramdown:
+#  parse_block_html: true
 
 
 sidebar:
