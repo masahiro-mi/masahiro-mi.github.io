@@ -2,25 +2,28 @@
 layout: default
 ---
 
-My name is Masahiro Mizukami. I'm a PhD of Computer Science in the AHC Lab in NAIST, Japan.
-My research topic is Dialogue Systems.
-I am particularly interested in System's Individuality Modeling.
+私は水上雅博です。
+奈良先端科学技術大学院大学で博士（工学）を取得しました。
+私の研究テーマは対話システムです。
+特に、対話システムの個人性のモデリング（話者の再現や、新たな性格や思考の学習）に興味があります。
 
-I am working on [Interaction Research Group](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html), [Innovative Communication Lab](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html), [NTT Communication Science Laboratories](http://www.kecl.ntt.co.jp/english/index.html) in Japan.
+
+私は[日本電信電話株式会社 コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html)の[協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html), [インタラクション対話研究グループ](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html)で研究員をしています。
+
 
 ## News
-- 2020.2	["Creating a dialogue system with Python (in Japanese)"](https://www.ohmsha.co.jp/book/9784274224799/) has been published by Ohmsha, Ltd.
-
+- 2020.2	オーム社より、我々が執筆した[『Pythonでつくる対話システム』](https://www.ohmsha.co.jp/book/9784274224799/) が出版されました。
+- 2019.12	人工知能学会 対話システムシンポジウム（SIG-SLUD）対話システムライブコンペティション２にて、我々の発表した『自然な流れに沿って対話を進めるアジェンダベース雑談対話システム』がオープントラック優秀賞を受賞しました．
+- 2019.12	人工知能学会 対話システムシンポジウム（SIG-SLUD）対話システムライブコンペティション２にて、我々の発表した『自らの体験に基づき雑談する対話システム』がシチュエーショントラック優秀賞を受賞しました．
+- 2018.11	人工知能学会 対話システムシンポジウム（SIG-SLUD）対話システムライブコンペティションにて、我々の発表した『文脈に沿った発話理解・生成を行うドメイン特化型雑談対話システムの実験的検討』が最優秀賞を受賞しました．
 
 ## Publications
 
 ### Jouenals
-
-- Yoko Ishikawa, **Masahiro Mizukami**, Koichiro Yoshino, Sakriani Sakti, Yu Suzuki, Satoshi Nakamura (2018). Persuasive Dialog System Using Emotional Expressions. Transactions of the Japanese Society for Artificial Intelligence, 33-1, pp. 1-9.
-- **Masahiro Mizukami**, Lasguido Nio, Hideaki Kizuki, Toshio Nomura, Graham Neubig, Koichiro Yoshino, Sakriani Sakti, Tomoki Toda, Satoshi Nakamura (2016). Example Based Dialogue System Baased on Satisfaction Prediction. Transactions of the Japanese Society for Artificial Intelligence, 31-1, pp. 1-12.
-- Ryuichiro Higashinaka, Kotaro Funakoshi, Masahiro Araki, Hiroshi Tsukahara, Yuka Kobayashi, **Masahiro Mizukami** (2016). Text Chat Dialogue Corpus Construction and Analysis of Dialogue Breakdown. Journal of Natural Language Processing, 23-1, pp. 59-86.
-- Kyoshiro Sugiyama, **Masahiro Mizukami**, Graham Neubig, Koichiro Yoshino, Yu Suzuki, Satoshi Nakamura (2016). An Investigation of Machine Translation Evaluation Metrics in Cross-lingual Question Answering. Journal of Natural Language Processing, 23-5, pp. 437-461.
-
+- 石川葉子, **水上雅博**, 吉野幸一郎, Sakriani Sakti, 鈴木優, 中村哲 (2018). 感情表現を用いた説得対話システム. 人工知能学会論文誌, 33-1, pp. 1-9.
+- **水上雅博**, Lasguido Nio, 木付英士, 野村敏男, Graham Neubig, 吉野幸一郎, Sakriani Sakti, 戸田智基, 中村哲 (2016). 快適度推定に基づく用例ベース対話システム. 人工知能学会論文誌, 32-1, pp. 1-12.
+- 東中竜一郎, 船越孝太郎, 荒木雅弘, 塚原裕史, 小林優佳, **水上雅博** (2016). テキストチャットを用いた雑談対話コーパスの構築と対話破綻の分析. 自然言語処理, 23-1, pp. 59-86.
+- 杉山享志朗, **水上雅博**, Graham Neubig, 吉野幸一郎, 鈴木優, 中村哲 (2016). 言語横断質問応答に適した機械翻訳評価尺度の調査. 自然言語処理, 23-5, pp. 437-461.
 
 
 ### Papers
@@ -30,5 +33,5 @@ I am working on [Interaction Research Group](http://www.kecl.ntt.co.jp/icl/icl/i
 - Ryuichiro Higashinaka, **Masahiro Mizukami**, Kotaro Funakoshi, Masahiro Araki, Hiroshi Tsukahara, Yuka Kobayashi (2015). Fatal or not? Finding errors that lead to dialogue breakdowns in chat-oriented dialogue systems. the 2015 Conference on Empirical Methods in Natural Language Processing.
 - Ryuichiro Higashinaka, Kotaro Funakoshi, Masahiro Araki, Hiroshi Tsukahara, Yuka Kobayashi, **Masahiro Mizukami** (2015). Towards taxonomy of errors in chat-oriented dialogue systems. 16th annual meeting of the special interest group on discourse and dialogue.
 
-Show All Publications...
+全てのリスト...
 
