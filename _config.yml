@@ -1,14 +1,12 @@
 plugins:
   - jekyll-remote-theme
-remote_theme: BDHU/minimalist
-theme: jekyll-theme-minimal
+remote_theme: alshedivat/al-folio
 title: Masahiro MIZUKAMI
 logo: /img/photo.jpg
 description: I'm a researcher, interested in Dialogue Systems and Individuality Modeling.
 email: ma.aqua.13 (at) gmail.com
 url: https://masahiro-mi.github.io
-markdown: kramdown
-
+baseurl: /masahiro-mi.github.io/
 
 sidebar:
   - name: Google Scholar
