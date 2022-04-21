@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Masahiro Mizukami
+description: I'm a researcher, interested in Dialogue Systems and Individuality Modeling.
 ---
 
 私は水上雅博です。
