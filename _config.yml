@@ -7,7 +7,3 @@ plugins:
 lang: ja
 title: Masahiro Mizukami
 description: I'm a researcher, interested in Dialogue Systems and Individuality Modeling.
-show_downloads: false
-
-url: https://masahiro-mi.github.io # the base hostname & protocol for your site
-baseurl: /masahiro-mi.github.io # the subpath of your site, e.g. /blog/
