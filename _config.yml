@@ -5,5 +5,8 @@ remote_theme: pages-themes/primer
 
 # page setting
 lang: ja
-title: Masahiro Mizukami .github.io
-#description: I'm a researcher, interested in Dialogue Systems and Individuality Modeling.
+title: 'Masahiro Mizukami .github.io'
+email: 'ma.aqua.13 (at) gmail.com'
+twitter_username: 'mima_tea'
+github_username: 'masahiro-mi'
+description: I'm a researcher, interested in Dialogue Systems and Individuality Modeling.
