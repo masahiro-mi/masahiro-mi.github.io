@@ -5,9 +5,9 @@ layout: default
 
 私は水上雅博です。
 奈良先端科学技術大学院大学で修士および博士（工学）を取得しました。  
-大学院での研究テーマは対話システムです。特に、対話システムの個人性のモデリング（話者の再現や、新たな性格や思考の学習）に興味があります。     
-現在は[日本電信電話株式会社 コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html)の[協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html), [インタラクション対話研究グループ](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html)で研究員をしています。  
-大学院に引き続き、対話システムにおける個人性のモデリングや、特定の人のコピーとなるAIを学習する方法について研究を進めています。    
+大学院での研究テーマは対話システムです。特に、対話システムの個人性のモデリング（話者の再現や、新たな性格や思考の学習）に興味があります。   
+現在は[日本電信電話株式会社 コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html)の[協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html), [インタラクション対話研究グループ](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html)で研究員をしています。
+大学院に引き続き、対話システムにおける個人性のモデリングや、特定の人のコピーとなるAIを学習する方法について研究を進めています。
 共同研究等でのご連絡は ~~masahiro.mizukami.df (at) hco.ntt.co.jp~~ （現在、育児休職中につき私用アドレス ma.aqua.13 (at) gmail.com） にご連絡ください。
 
 <br clear="left">
