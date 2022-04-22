@@ -3,16 +3,16 @@ layout: default
 ---
 
 
-## Publications
+# Publications
 
-### Jouenals
+## Jouenals
 
 - 石川葉子, **水上雅博**, 吉野幸一郎, Sakriani Sakti, 鈴木優, 中村哲 (2018). ***感情表現を用いた説得対話システム.*** 人工知能学会論文誌, 33-1, pp. 1-9.
 - **水上雅博**, Lasguido Nio, 木付英士, 野村敏男, Graham Neubig, 吉野幸一郎, Sakriani Sakti, 戸田智基, 中村哲 (2016). ***快適度推定に基づく用例ベース対話システム.*** 人工知能学会論文誌, 32-1, pp. 1-12.
 - 東中竜一郎, 船越孝太郎, 荒木雅弘, 塚原裕史, 小林優佳, **水上雅博** (2016). ***テキストチャットを用いた雑談対話コーパスの構築と対話破綻の分析.*** 自然言語処理, 23-1, pp. 59-86.
 - 杉山享志朗, **水上雅博**, Graham Neubig, 吉野幸一郎, 鈴木優, 中村哲 (2016). ***言語横断質問応答に適した機械翻訳評価尺度の調査.*** 自然言語処理, 23-5, pp. 437-461.
 
-### Papers
+## Papers
 
 - Hiromi Narimatsu, Ryuichiro Higashinaka, Hiroaki Sugiyama, **Masahiro Mizukami**, Tsunehiro Arimoto (2019). ***Analyzing How a Talk Show Host Performs Follow-Up Questions for Developing an Interview Agent.*** 10th International Workshop on Spoken Dialogue Systems Technology.
 - Tsunehiro Arimoto, Hiroaki Sugiyama, **Masahiro Mizukami**, Hiromi Narimatsu, Ryuichiro Higashinaka (2019). ***Analysis of satisfaction and topics in repeated conversation through days.*** 23rd Workshop on the Semantics and Pragmatics of Dialogue.
@@ -58,7 +58,3 @@ layout: default
 - Graham Neubig, Shinsuke Mori, **Masahiro Mizukami** (2013). ***A Framework and Tool for Collaborative Extraction of Reliable Information.*** the Workshop on Language Processing and Crisis Information 2013.
 - **水上雅博**, Graham Neubig, Sakriani Sakti, 戸田智基, 中村哲 (2013). ***話し言葉における言語情報の個人性変換における変換辞書拡張.*** 電子情報通信学会音声研究会 (SP), 千葉.
 - **水上雅博**, Graham Neubig, Sakriani Sakti, 戸田智基, 中村哲 (2013). ***話し言葉の書き起こし文章の話者性の変換.*** 人工知能学会全国大会論文集 第 27 回全国大会 (2013).
-
-
-### そのほか
-- [日本語対話コーパス](/dialogue_corpus.html)：日本語の対話システムに利用できるコーパスの一覧を作成しています。

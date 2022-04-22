@@ -15,5 +15,6 @@ layout: default
 [対話システムライブコンペティション](https://dialog-system-live-competition.github.io/dslc3/lecture.html)のオーガナイザおよび対話システム作成講習会の講師を担当。
 また、人間と対話システムの対話において、どのような対話破綻（対話が継続できなくなる状態）が生じるのか分析する対話破綻類型化の研究を進めています。
 
-# そのほか
+## そのほか
 - [日本語対話コーパス](/dialogue_corpus.html)：日本語の対話システムに利用できるコーパスの一覧を作成しています。
+- [日本語言い換えデータベース (PPDB:Japanese)](https://ahcweb01.naist.jp/old/resource/jppdb/)：NAIST在籍時に作成した、日英対訳コーパスから生成した日本語の言い換えデータです。
