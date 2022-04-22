@@ -1,4 +1,6 @@
 - name: Home
   link: /
-#- name: About
-#  link: /about.html
+- name: Research
+  link: /research.html
+- name: Publication
+  link: /publication.html
