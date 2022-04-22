@@ -1,9 +1,7 @@
 ---
 layout: default
-title: Masahiro Mizukami
-description: I'm a researcher, interested in Dialogue Systems and Individuality Modeling.
 ---
-
+![著者近影](https://masahiro-mi.github.io/img/photo.jpg)
 私は水上雅博です。
 奈良先端科学技術大学院大学で博士（工学）を取得しました。
 私の研究テーマは対話システムです。
