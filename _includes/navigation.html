@@ -1,6 +1,5 @@
 {% if site.data.navigation %}
 <nav>
-  {% for item in site.data.navigation %}
   <style>
     .cp_navi {
     	background-color: #ffffff;
@@ -85,14 +84,16 @@
   	}
   </style>
 
-  <div class="cp_navi"><ul>
-    <li>
-      <a href="{{ item.link }}" {% if page.url == item.link %}style="font-weight: bolder;"{% endif %}>
-        {{ item.name }}
-      </a>
-    </li>
-  </ul>
+  <div class="cp_navi">
+	  <ul>
+		{% for item in site.data.navigation %}
+    		<li>
+      		<a href="{{ item.link }}" {% if page.url == item.link %}style="font-weight: bolder;"{% endif %}>
+        		{{ item.name }}
+	      	</a>
+    		</li>
+		{% endfor %}
+  	</ul>
   </div>
-  {% endfor %}
 </nav>
 {% endif %}
