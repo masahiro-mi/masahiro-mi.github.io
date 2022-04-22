@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-![著者近影](https://masahiro-mi.github.io/img/photo.jpg){: float="left"}
+![著者近影](https://masahiro-mi.github.io/img/photo.jpg){: style="float:left;"}
 
 
 私は水上雅博です。
