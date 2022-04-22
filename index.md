@@ -1,14 +1,13 @@
 ---
 layout: default
 ---
-![著者近影](https://masahiro-mi.github.io/img/photo.jpg){: style="float:left; margin:20px;"}
+![著者近影](https://masahiro-mi.github.io/img/photo.jpg){: style="float:left; margin: 0px auto;"}
 
-<div style="margin:20px;">
 私は水上雅博です。
 奈良先端科学技術大学院大学で博士（工学）を取得しました。  
 私の研究テーマは対話システムです。特に、対話システムの個人性のモデリング（話者の再現や、新たな性格や思考の学習）に興味があります。  
 現在は[日本電信電話株式会社 コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html)の[協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html), [インタラクション対話研究グループ](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html)で研究員をしています。
-</div>
+
 <br clear="left">
 
 ## News
