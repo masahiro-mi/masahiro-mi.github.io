@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-![著者近影](https://masahiro-mi.github.io/img/photo.jpg)
+![著者近影](https://masahiro-mi.github.io/img/photo.jpg){.pull-left}
 私は水上雅博です。
 奈良先端科学技術大学院大学で博士（工学）を取得しました。
 私の研究テーマは対話システムです。
@@ -10,6 +10,7 @@ layout: default
 
 私は[日本電信電話株式会社 コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html)の[協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html), [インタラクション対話研究グループ](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html)で研究員をしています。
 
+<div class="clearfix"></div>
 
 ## News
 - 2020.2	オーム社より、我々が執筆した[『Pythonでつくる対話システム』](https://www.ohmsha.co.jp/book/9784274224799/) が出版されました。
@@ -20,18 +21,18 @@ layout: default
 ## Publications
 
 ### Jouenals
-- 石川葉子, **水上雅博**, 吉野幸一郎, Sakriani Sakti, 鈴木優, 中村哲 (2018). 感情表現を用いた説得対話システム. 人工知能学会論文誌, 33-1, pp. 1-9.
-- **水上雅博**, Lasguido Nio, 木付英士, 野村敏男, Graham Neubig, 吉野幸一郎, Sakriani Sakti, 戸田智基, 中村哲 (2016). 快適度推定に基づく用例ベース対話システム. 人工知能学会論文誌, 32-1, pp. 1-12.
-- 東中竜一郎, 船越孝太郎, 荒木雅弘, 塚原裕史, 小林優佳, **水上雅博** (2016). テキストチャットを用いた雑談対話コーパスの構築と対話破綻の分析. 自然言語処理, 23-1, pp. 59-86.
-- 杉山享志朗, **水上雅博**, Graham Neubig, 吉野幸一郎, 鈴木優, 中村哲 (2016). 言語横断質問応答に適した機械翻訳評価尺度の調査. 自然言語処理, 23-5, pp. 437-461.
+- 石川葉子, **水上雅博**, 吉野幸一郎, Sakriani Sakti, 鈴木優, 中村哲 (2018). ***感情表現を用いた説得対話システム.*** 人工知能学会論文誌, 33-1, pp. 1-9.
+- **水上雅博**, Lasguido Nio, 木付英士, 野村敏男, Graham Neubig, 吉野幸一郎, Sakriani Sakti, 戸田智基, 中村哲 (2016). ***快適度推定に基づく用例ベース対話システム.*** 人工知能学会論文誌, 32-1, pp. 1-12.
+- 東中竜一郎, 船越孝太郎, 荒木雅弘, 塚原裕史, 小林優佳, **水上雅博** (2016). ***テキストチャットを用いた雑談対話コーパスの構築と対話破綻の分析.*** 自然言語処理, 23-1, pp. 59-86.
+- 杉山享志朗, **水上雅博**, Graham Neubig, 吉野幸一郎, 鈴木優, 中村哲 (2016). ***言語横断質問応答に適した機械翻訳評価尺度の調査.*** 自然言語処理, 23-5, pp. 437-461.
 
 
 ### Papers
 
-- Ryuichiro Higashinaka, Masahiro Araki, Hiroshi Tsukahara, **Masahiro Mizukami** (2019). Improving Taxonomy of Errors in Chat-Oriented Dialogue Systems. 9th International Workshop on Spoken Dialogue System Technology.
-- Ryuichiro Higashinaka, **Masahiro Mizukami**, Hidetoshi Kawabata, Emi Yamaguchi, Noritake Adachi, Junji Tomita (2018). Role play-based question-answering by real users for building chatbots with consistent personalities. 19th Annual S09IGdial Meeting on Discourse and Dialogue.
-- Ryuichiro Higashinaka, **Masahiro Mizukami**, Kotaro Funakoshi, Masahiro Araki, Hiroshi Tsukahara, Yuka Kobayashi (2015). Fatal or not? Finding errors that lead to dialogue breakdowns in chat-oriented dialogue systems. the 2015 Conference on Empirical Methods in Natural Language Processing.
-- Ryuichiro Higashinaka, Kotaro Funakoshi, Masahiro Araki, Hiroshi Tsukahara, Yuka Kobayashi, **Masahiro Mizukami** (2015). Towards taxonomy of errors in chat-oriented dialogue systems. 16th annual meeting of the special interest group on discourse and dialogue.
+- Ryuichiro Higashinaka, Masahiro Araki, Hiroshi Tsukahara, **Masahiro Mizukami** (2019). ***Improving Taxonomy of Errors in Chat-Oriented Dialogue Systems.*** 9th International Workshop on Spoken Dialogue System Technology.
+- Ryuichiro Higashinaka, **Masahiro Mizukami**, Hidetoshi Kawabata, Emi Yamaguchi, Noritake Adachi, Junji Tomita (2018). ***Role play-based question-answering by real users for building chatbots with consistent personalities.*** 19th Annual S09IGdial Meeting on Discourse and Dialogue.
+- Ryuichiro Higashinaka, **Masahiro Mizukami**, Kotaro Funakoshi, Masahiro Araki, Hiroshi Tsukahara, Yuka Kobayashi (2015). ***Fatal or not? Finding errors that lead to dialogue breakdowns in chat-oriented dialogue systems.*** the 2015 Conference on Empirical Methods in Natural Language Processing.
+- Ryuichiro Higashinaka, Kotaro Funakoshi, Masahiro Araki, Hiroshi Tsukahara, Yuka Kobayashi, **Masahiro Mizukami** (2015). ***Towards taxonomy of errors in chat-oriented dialogue systems.*** 16th annual meeting of the special interest group on discourse and dialogue.
 
 全てのリスト...
 
