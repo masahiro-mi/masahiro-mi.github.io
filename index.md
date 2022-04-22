@@ -1,13 +1,7 @@
 ---
 layout: default
 ---
-<style type="text/css">
-    .align-left {
-        float: left;
-    }
-</style>
-
-![著者近影](https://masahiro-mi.github.io/img/photo.jpg){.align-left}
+![著者近影](https://masahiro-mi.github.io/img/photo.jpg){: float="left"}
 私は水上雅博です。
 奈良先端科学技術大学院大学で博士（工学）を取得しました。
 私の研究テーマは対話システムです。特に、対話システムの個人性のモデリング（話者の再現や、新たな性格や思考の学習）に興味があります。
