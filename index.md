@@ -1,16 +1,22 @@
 ---
 layout: default
 ---
+<style type="text/css">
+    .align-left {
+        float: left;
+    }
+</style>
 
-<table style=”border:none;”>
-  <tbody>
-    <tr>
-      <td><img src="https://masahiro-mi.github.io/img/photo.jpg" alt="著者近影" /></td>
-      <td>私は水上雅博です。<br />奈良先端科学技術大学院大学で博士（工学）を取得しました。<br />私の研究テーマは対話システムです。特に、対話システムの個人性のモデリング（話者の再現や、新たな性格や思考の学習）に興味があります。<br /><br />現在は<a href="http://www.kecl.ntt.co.jp/english/index.html">日本電信電話株式会社 コミュニケーション科学基礎研究所</a>の<a href="http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html">協創情報研究部</a>, <a href="http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html">インタラクション対話研究グループ</a>で研究員をしています。</td>
-    </tr>
-  </tbody>
-</table>
+![著者近影](https://masahiro-mi.github.io/img/photo.jpg){: align-left}
 
+
+私は水上雅博です。
+奈良先端科学技術大学院大学で博士（工学）を取得しました。
+私の研究テーマは対話システムです。特に、対話システムの個人性のモデリング（話者の再現や、新たな性格や思考の学習）に興味があります。
+
+
+
+現在は[日本電信電話株式会社 コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html)の[協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html), [インタラクション対話研究グループ](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html)で研究員をしています。|
 
 
 ## News
