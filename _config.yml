@@ -1,7 +1,15 @@
 # theme setting
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-remote_theme: pages-themes/primer
+# plugins:
+# - jekyll-remote-theme # add this line to the plugins list if you already have one
+# remote_theme: pages-themes/primer
+exclude:
+  - node_modules
+  - script
+
+sass:
+  style: :compressed
+
+theme: jekyll-theme-primer
 
 # page setting
 lang: ja
