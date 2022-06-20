@@ -19,7 +19,7 @@ description: これは日本語を対象とする対話システムの構築に�
 | [名大会話コーパス](https://mmsrv.ninjal.ac.jp/nucc/)  | 129会話， 合計100時間 | 音声及び書き起こし | CC BY-NC-ND 4.0 | 同左 | 日本語母語話者同士の雑談を文字化したコーパス。 現在は国立国語研究所で公開。 | 
 | [CABank Japanese Sakura Corpus](https://ca.talkbank.org/access/Sakura.html)  | 18会話， 合計7.5時間 | 動画及び書き起こし | TalkBank規約に従う | 同左 | 4話者1グループで行われた対話を文字化したコーパス。最初は対話のトピックを参加者に与えて対話を開始する。 |
 | [CABank Japanese CallHome Corpus](https://ca.talkbank.org/access/CallHome/jpn.html)  | 120会話，合計18.5時間 | 音声及び書き起こし | TalkBank規約に従う | 同左 | 北米在住の日本語母語話者による日本国内の家族や友人への国際通話。録音を了承したうえでの雑談。会話内容に制限なし。 | 
-| [CABank Japanese CallFriend Corpus](https://ca.talkbank.org/access/CallFriend/jpn.html)  | 60会話 | 音声 | TalkBank規約に従う | 同左 | アメリカ・カナダ在住の日本語話者の通話を録音したコーパス。対話あたり5~30分程度。話者の性別、年齢、学歴、通話相手などの情報も付与。 | 
+| [CABank Japanese CallFriend Corpus](https://ca.talkbank.org/access/CallFriend/jpn.html)  | 60会話 | 音声及び書き起こし | LDC User Agreement for Non-Members | 同左 | 言語同定用のコーパス。北米在住の日本語が母国語の話者の通話を録音。対話あたり5~30分程度。話者の性別、年齢、学歴、通話相手などの情報も付与。 | 
 | [BTSJ日本語自然会話コーパス](https://ninjal-usamilab.info/lab/btsj_corpus2021/)  | 446会話、合計112.5時間 | 書き起こし（一部音声あり） | 無償（要申し込み） | 記載なし | いくつかの場面に分けて雑談を収録。「発話の重なり」や「沈黙」など語用論的分析に有益な情報を付与。 |
 | [日本語話題別会話コーパス (J-TOCC)](http://nakamata.info/database/)  | 15話題×120会話、合計150時間 | 書き起こし | 無償（要申し込み） | 記載なし | 話題ごと、話者ごとに同じ時間数の対話を収録。話者ごとに話題にどれだけ詳しいかという「話題精通度」情報を付与。 |
 | [日本語共感的音声対話コーパス (STUDIES)](https://www.nii.ac.jp/news/2022/0329.html)  | 長い対話150＋短い対話720、合計8時間 | 音声 | 無償（要申し込み） | 記載なし | 声優3名（講師役の女性1名と生徒役の男女各1名）による模擬対話音声を収録。対話は台本に従い、指定された感情で対話相手に共感するように発話。 |
