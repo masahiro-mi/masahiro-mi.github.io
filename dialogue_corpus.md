@@ -51,6 +51,7 @@ description: これは日本語を対象とする対話システムの構築に�
 | [おーぷん2ちゃんねる対話コーパス](https://github.com/1never/open2ch-dialogue-corpus)  | 約815万対話 | テキスト | 無償 | 無償 | おーぷん2ちゃんねるの掲示板で行われた対話を収録。加えて、コーパス以外に「応答順位付けタスク用データ」や評価用スクリプトも配布されている。 |
 | [Accommodation Search Dialog Corpus (宿泊施設探索対話コーパス)](https://github.com/megagonlabs/asdc)  | 210会話＋約10万発話  | テキスト | CC BY 4.0 | 可 | 宿泊施設を探しているカスタマーとエージェントのテキストによる対話を収録したコーパス。加えて、発話の要件（どのような宿が良いかなど）や対話行為などのアノテーションも付与。|
 | [日本語映画推薦対話データセット (JMRD)](https://github.com/ku-nlp/JMRD)  | 5,075対話、約11万発話  | テキスト | CC BY-SA 4.0 | 可 | クラウドワーカーが推薦者と被推薦者に分かれて映画推薦対話を収録。全ての推薦者側の発話に対して推薦の参考にした外部知識の情報を付与。|
+| [OjousamaTalkScriptDataset](https://github.com/matsuvr/OjousamaTalkScriptDataset)  | 200対話  | テキスト対話 | MITライセンス | 可 | 一般人とお嬢様の会話を模したおデータセットですわ。| 
 
 
   
