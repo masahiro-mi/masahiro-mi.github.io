@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+# Masahiro MIZUKAMI
 ![著者近影](https://masahiro-mi.github.io/img/photo.jpg){: style="float:left; margin: 0em 1em;"}
 
 私は水上雅博です。
