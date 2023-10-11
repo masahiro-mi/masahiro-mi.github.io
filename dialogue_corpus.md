@@ -55,7 +55,7 @@ description: これは日本語を対象とする対話システムの構築に�
 | [日本語日常対話コーパス（Japanese Daily Dialogue）](https://github.com/jqk09a/japanese-daily-dialogue)  | 5,261対話  | テキスト対話 | CC BY-NC-ND 4.0 | 不可 | 日常生活や学校での対話などの5つのトピックについて，可能な限り規範的な言語表現（語彙、語順）で発話を構成した対話コーパス。| 
 | [Roseblue ゲームシナリオデータセット](https://gitlab.com/open_contents_datasets/Rosebleu)  | 約550万文字  | テキスト対話 | Apache License 2.0 | 可 | 10タイトルのゲームのシナリオから、話者と発話を抜き出したデータセット。成人向けシナリオもあるため、一部にセクシャルな描写を含む。| 
 | [Character Conversation Dataset](https://github.com/matsuvr/characterconversationdataset) | 約2万文字  | テキスト対話 |Apache License 2.0| 可 | 公開終了した同人ノベルゲームのシナリオから、話者と発話を抜き出したデータセット。 | 
-
+| [megagonlabs/instruction_ja](https://github.com/megagonlabs/instruction_ja) |669対話  | テキスト対話 | MITライセンス | 可 |[kunishou/hh-rlhf-49k-ja](https://huggingface.co/datasets/kunishou/hh-rlhf-49k-ja)の一部を人手で改変して自然な日本語表現にした日本語指示データ | 
 
   
 # 対話関連コーパス
@@ -74,7 +74,7 @@ description: これは日本語を対象とする対話システムの構築に�
 
 
 # 更新履歴
-- 2023.10.11 Roseblue ゲームシナリオデータセットほか計2件の情報を追加しました
+- 2023.10.11 Roseblue ゲームシナリオデータセットほか計3件の情報を追加しました
 - 2023.7.6 日本語日常対話コーパス（Japanese Daily Dialogue）の情報を追加しました
 - 2023.3.3 OjousamaTalkScriptDatasetの情報を追加しました
 - 2022.7.21 大阪大学 マルチモーダル対話コーパス (Hazumi)の情報を更新しました
