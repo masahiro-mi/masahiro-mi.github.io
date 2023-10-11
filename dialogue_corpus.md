@@ -51,8 +51,10 @@ description: これは日本語を対象とする対話システムの構築に�
 | [おーぷん2ちゃんねる対話コーパス](https://github.com/1never/open2ch-dialogue-corpus)  | 約815万対話 | テキスト | 無償 | 無償 | おーぷん2ちゃんねるの掲示板で行われた対話を収録。加えて、コーパス以外に「応答順位付けタスク用データ」や評価用スクリプトも配布されている。 |
 | [Accommodation Search Dialog Corpus (宿泊施設探索対話コーパス)](https://github.com/megagonlabs/asdc)  | 210会話＋約10万発話  | テキスト | CC BY 4.0 | 可 | 宿泊施設を探しているカスタマーとエージェントのテキストによる対話を収録したコーパス。加えて、発話の要件（どのような宿が良いかなど）や対話行為などのアノテーションも付与。|
 | [日本語映画推薦対話データセット (JMRD)](https://github.com/ku-nlp/JMRD)  | 5,075対話、約11万発話  | テキスト | CC BY-SA 4.0 | 可 | クラウドワーカーが推薦者と被推薦者に分かれて映画推薦対話を収録。全ての推薦者側の発話に対して推薦の参考にした外部知識の情報を付与。|
-| [OjousamaTalkScriptDataset](https://github.com/matsuvr/OjousamaTalkScriptDataset)  | 200対話  | テキスト対話 | MITライセンス | 可 | 一般人とお嬢様の会話を模したおデータセットですわ。| 
+| [Ojousama Talk Script Dataset](https://github.com/matsuvr/OjousamaTalkScriptDataset)  | 200対話  | テキスト対話 | MITライセンス | 可 | 一般人とお嬢様の会話を模したおデータセットですわ。| 
 | [日本語日常対話コーパス（Japanese Daily Dialogue）](https://github.com/jqk09a/japanese-daily-dialogue)  | 5,261対話  | テキスト対話 | CC BY-NC-ND 4.0 | 不可 | 日常生活や学校での対話などの5つのトピックについて，可能な限り規範的な言語表現（語彙、語順）で発話を構成した対話コーパス。| 
+| [Roseblue ゲームシナリオデータセット](https://gitlab.com/open_contents_datasets/Rosebleu)  | 約550万文字  | テキスト対話 | Apache License 2.0 | 可 | 10タイトルのゲームのシナリオから、話者と発話を抜き出したデータセット。成人向けシナリオもあるため、一部にセクシャルな描写を含む。| 
+| [Character Conversation Dataset](https://github.com/matsuvr/characterconversationdataset) | 約2万文字  | テキスト対話 |Apache License 2.0| 可 | 公開終了した同人ノベルゲームのシナリオから、話者と発話を抜き出したデータセット。 | 
 
 
   
@@ -72,6 +74,7 @@ description: これは日本語を対象とする対話システムの構築に�
 
 
 # 更新履歴
+- 2023.10.11 Roseblue ゲームシナリオデータセットほか計2件の情報を追加しました
 - 2023.7.6 日本語日常対話コーパス（Japanese Daily Dialogue）の情報を追加しました
 - 2023.3.3 OjousamaTalkScriptDatasetの情報を追加しました
 - 2022.7.21 大阪大学 マルチモーダル対話コーパス (Hazumi)の情報を更新しました
