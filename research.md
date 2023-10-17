@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "Research"
 ---
 
 # 最近の研究

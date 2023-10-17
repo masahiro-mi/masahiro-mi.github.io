@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 対話システム研究者懇親会
+title: "対話システム研究者懇親会"
 description: 
 ---
 # 対話システム研究者懇親会の概要
