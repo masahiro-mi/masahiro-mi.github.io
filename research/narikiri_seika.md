@@ -37,7 +37,9 @@ title: "なりきりAI 京町セイカについて"
   <div class="row columns">
     <!-- 論文 -->
     <div class="column one-fourth p-3">
-        <div class="iframely-embed m-auto"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.jstage.jst.go.jp/article/tjsai/38/3/38_38-3_B-MA2/_article/-char/ja" data-iframely-url="//iframely.net/i5dVwDU"></a></div></div><script async src="//iframely.net/embed.js"></script>
+      <div class=" m-auto">
+        <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.jstage.jst.go.jp/article/tjsai/38/3/38_38-3_B-MA2/_article/-char/ja" data-iframely-url="//iframely.net/i5dVwDU"></a></div></div><script async src="//iframely.net/embed.js"></script>
+      </div>
     </div>
     <!---->
     <div class="column three-fourths p-3">
