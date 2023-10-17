@@ -32,7 +32,7 @@ title: "なりきりAI 京町セイカについて"
     <div class="column one-fourth p-3">
         <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px;"><a href="https://mainichi.jp/articles/20211117/ddl/k26/010/299000c" data-iframely-url="//iframely.net/ESz5KKc"></a></div></div><script async src="//iframely.net/embed.js"></script>
     </div>
-
+  </div>
 
   <div class="row columns">
     <!-- 論文 -->
