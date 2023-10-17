@@ -7,7 +7,7 @@ title: "なりきりAI 京町セイカについて"
 <div class="container">
   <div class="row columns">
     <!-- アイキャッチ記事 -->
-    <div class="column one-fourth p-3 centered v-align-middle">
+    <div class="column one-fourth p-3 v-align-middle">
         <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 75%; padding-top: 120px;"><a href="https://journal.ntt.co.jp/article/7561" data-iframely-url="//iframely.net/dYDybhW"></a></div></div><script async src="//iframely.net/embed.js"></script>
     </div>
     <!--概要-->
@@ -25,7 +25,7 @@ title: "なりきりAI 京町セイカについて"
       <p class="lead">なりきりAI 京町セイカについては、NTTのTOPICSやオープンハウスでの展示以外にも、実証実験開始の折にはNHK京都のニュースをはじめ、朝日新聞様、毎日新聞様など、多数のメディアにて取り上げていただきました。</p>
     </div>
     <!--記事1-->
-    <div class="column one-fourth p-3 centered v-align-middle">
+    <div class="column one-fourth p-3 v-align-middle">
         <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.3333%; padding-top: 120px;"><a href="https://www.asahi.com/articles/ASN767DSSN73PLZB001.html" data-iframely-url="//iframely.net/Amrkkes"></a></div></div><script async src="//iframely.net/embed.js"></script>
     </div>
     <!--記事2-->
@@ -36,7 +36,7 @@ title: "なりきりAI 京町セイカについて"
 
   <div class="row columns">
     <!-- 論文 -->
-    <div class="column one-fourth p-3 centered v-align-middle">
+    <div class="column one-fourth p-3 v-align-middle">
         <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.jstage.jst.go.jp/article/tjsai/38/3/38_38-3_B-MA2/_article/-char/ja" data-iframely-url="//iframely.net/i5dVwDU"></a></div></div><script async src="//iframely.net/embed.js"></script>
     </div>
     <!---->
