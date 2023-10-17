@@ -4,13 +4,13 @@ layout: default
 
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
 <div class="container">
-  <div class="row columns">
+  <div class="columns">
     <!-- アイキャッチ記事 -->
-    <div class="col one-fourths">
+    <div class="one-fourths">
         <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 75%; padding-top: 120px;"><a href="https://journal.ntt.co.jp/article/7561" data-iframely-url="//iframely.net/dYDybhW"></a></div></div><script async src="//iframely.net/embed.js"></script>
     </div>
     <!--概要-->
-    <div class="col three-fourths ">
+    <div class="three-fourths ">
         <h1 class="display-4">なりきりAI 京町セイカ</h1>
         <p class="lead"><a href="https://narikiri-qa.jp/">"なりきりAIプロジェクト"</a>の一環として、雑談におけるキャラクター性のみでなく、観光案内や知識QAといった雑談以外のタスクでもキャラクター性を発揮しながらタスクを遂行する技術を提案しています。</p>
     </div>
