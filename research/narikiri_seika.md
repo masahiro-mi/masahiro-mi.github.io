@@ -4,7 +4,7 @@ title: "なりきりAI 京町セイカについて"
 ---
 
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-<div class="container centered">
+<div class="container centered v-align-middle">
   <div class="row columns">
     <!-- アイキャッチ記事 -->
     <div class="column one-fourth p-3">
