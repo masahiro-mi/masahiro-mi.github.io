@@ -8,27 +8,40 @@ title: "なりきりAI 京町セイカについて"
   <div class="row columns">
     <!-- アイキャッチ記事 -->
     <div class="column one-fourth p-3">
-        <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 75%; padding-top: 120px;"><a href="https://journal.ntt.co.jp/article/7561" data-iframely-url="//iframely.net/dYDybhW"></a></div></div><script async src="//iframely.net/embed.js"></script>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/47LsuC5-bAA?si=C41VX43NVo4NWGpK&amp;start=330" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <!--概要-->
-    <div class="column three-fourths p-3">
+    <div class="column three-fourth p-3">
         <h1 class="display-4">なりきりAI 京町セイカについて</h1>
-        <p class="lead">なりきりAI 京町セイカは、京都府精華町の広報キャラクター「京町セイカ」をAI/対話システム化し、精華町に関するさまざまな情報提供、問い合わせ対応、役場内の案内や観光案内などのタスク対話、気軽な雑談対話を精華町役場の来庁者の皆様に提供する実証実験です。<a href="https://narikiri-qa.jp/">"なりきりAIプロジェクト"</a>の一環として、雑談におけるキャラクター性のみでなく、雑談以外のタスク対話でもキャラクター性を発揮しながら、自然かつ円滑に多種多様なタスクを遂行する対話システム技術を提案し、実証実験を通してその有効性を検証しています。</p>
+        <p class="lead">なりきりAI 京町セイカは、京都府精華町の広報キャラクター「京町セイカ」をAI（対話システム）化し、精華町に関するさまざまな情報提供、問い合わせ対応、役場内の案内や観光案内などのタスク対話、気軽な雑談対話を精華町役場の来庁者の皆様に提供する実証実験です。
+        <a href="https://narikiri-qa.jp/">"なりきりAIプロジェクト"</a>の一環として、雑談におけるキャラクター性のみでなく、雑談以外の多様なタスク対話においてもキャラクター性を発揮しながら、自然かつ円滑に多種多様なタスクを遂行する対話システム技術を提案し、実証実験を通してその有効性を検証しています。</p>
     </div>
   </div>
 
   <!--ニュース取り上げの紹介-->
   <div class="row columns">
     <!-- 記事取り上げ説明 -->
-    <div class="column one-half p-3">
-      <h1 class="display-4">報道発表</h1>
-      <p class="lead">なりきりAI 京町セイカについては、NTTのTOPICSやオープンハウスでの展示以外にも、実証実験開始の折にはNHK京都のニュースをはじめ、朝日新聞様、毎日新聞様など、多数のメディアにて取り上げていただきました。</p>
+    <div class="column one p-3">
+      <h1 class="display-4">報道発表や各種メディアでの取り上げ</h1>
+      <p class="lead">なりきりAI 京町セイカについては、NTTのTOPICSやオープンハウスでの展示以外にも、実証実験開始の折にはNHK京都のニュースをはじめ、朝日新聞様、毎日新聞様など、多数のメディアにて取り上げていただきました。
+      その一部をご紹介させていただきます．</p>
     </div>
+  </div>
+
+  <div class="row columns">
     <!--記事1-->
+    <div class="column one-fourth p-3">
+        <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 75%; padding-top: 120px;"><a href="https://journal.ntt.co.jp/article/7561" data-iframely-url="//iframely.net/dYDybhW"></a></div></div><script async="" src="//iframely.net/embed.js"></script>
+    </div>
+    <!--記事2-->
+    <div class="column one-fourth p-3">
+        <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px;"><a href="https://group.ntt/jp/topics/2021/11/12/ai_seika.html" data-iframely-url="//iframely.net/3BHp1tA"></a></div></div><script async src="//iframely.net/embed.js"></script>
+    </div>
+    <!--記事3-->
     <div class="column one-fourth p-3">
         <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.3333%; padding-top: 120px;"><a href="https://www.asahi.com/articles/ASN767DSSN73PLZB001.html" data-iframely-url="//iframely.net/Amrkkes"></a></div></div><script async src="//iframely.net/embed.js"></script>
     </div>
-    <!--記事2-->
+    <!--記事4-->
     <div class="column one-fourth p-3">
         <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px;"><a href="https://mainichi.jp/articles/20211117/ddl/k26/010/299000c" data-iframely-url="//iframely.net/ESz5KKc"></a></div></div><script async src="//iframely.net/embed.js"></script>
     </div>

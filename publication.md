@@ -19,10 +19,10 @@ title: "Publications"
 
 ## Papers
 <!--2023-->
-- **水上雅博**, 杉山弘晃 (2023). ***対話比較による話者同一性判定タスクの提案とベースラインモデルの検討.*** 人工知能学会全国大会論文集 第 37 回全国大会 (2023).
+- **水上雅博**, 杉山弘晃 (2023). ***対話比較による話者同一性判定タスクの提案とベースラインモデルの検討.*** 人工知能学会全国大会論文集 第 37 回全国大会 (2023). <font color="red">2022年度 人工知能学会 全国大会優秀賞</font>
 - 成松宏美, 杉山弘晃, **水上雅博**, 有本庸浩 (2023). ***雑談対話システムにおける伝聞体験を根拠とした共感発話の効果.*** 人工知能学会全国大会論文集 第 37 回全国大会 (2023).
 - 有本庸浩, 杉山弘晃, 成松宏美, **水上雅博** (2023). ***長期雑談対話システムの実現に向けた長期テキストチャットの収集と分析.*** 人工知能学会全国大会論文集 第 37 回全国大会 (2023).
-- 安川浩貴, **水上雅博**, 品川政太朗, 杉山弘晃, 須藤克仁, 中村哲 (2023). ***人物埋め込み空間の内挿性と制御性を兼ね備えた応答生成モデル.*** SIG-SLUD, pp. 44-49. <font color="red">2022年度 研究会優秀賞受賞論文</font>
+- 安川浩貴, **水上雅博**, 品川政太朗, 杉山弘晃, 須藤克仁, 中村哲 (2023). ***人物埋め込み空間の内挿性と制御性を兼ね備えた応答生成モデル.*** SIG-SLUD, pp. 44-49. <font color="red">2022年度 人工知能学会 研究会優秀賞</font>
 <!--2022-->
 - Hiroaki Sugiyama, **Masahiro Mizukami**, Tsunehiro Arimoto, Hiromi Narimatsu, Yuya Chiba, Hideharu Nakajima, Toyomi Meguro (2022). ***Empirical analysis of training strategies of transformer-based japanese chit-chat systems.*** IEEE Spoken Language Technology Workshop (SLT), pp. 685-691.
 - Koh Mitsuda, Ryuichiro Higashinaka, Hiroaki Sugiyama, **Masahiro Mizukami**, Tetsuya Kinebuchi, Ryuta Nakamura, Noritake Adachi, Hidetoshi Kawabata (2022). ***Fine-Tuning a Pre-trained Transformer-Based Encoder-Decoder Model with User-Generated Question-Answer Pairs to Realize Character-Like Chatbots.*** 12th International Workshop on Spoken Dialogue System Technology (IWSDS), pp. 277-290.
