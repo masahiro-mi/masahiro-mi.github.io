@@ -8,7 +8,7 @@ title: "なりきりAI 京町セイカについて"
   <div class="row columns">
     <!--アイキャッチ-->
     <div class="column one-fourth p-3">
-![アイキャッチ](https://masahiro-mi.github.io/img/SeikaSS.jpg){: style="float:left; margin: 0em 1em;"}
+      <img src="https://masahiro-mi.github.io/img/SeikaSS.jpg" style="float:left; margin: 0em 1em;">
     </div>
     <!--概要-->
     <div class="column three-fourth p-3">
