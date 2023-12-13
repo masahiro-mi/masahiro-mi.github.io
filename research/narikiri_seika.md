@@ -6,13 +6,13 @@ title: "なりきりAI 京町セイカについて"
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
 <div class="container">
   <div class="row columns">
-    <!-- アイキャッチ記事 -->
+    <!--アイキャッチ-->
     <div class="column one-fourth p-3">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/47LsuC5-bAA?si=C41VX43NVo4NWGpK&amp;start=330" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+![アイキャッチ](https://masahiro-mi.github.io/img/SeikaSS.jpg){: style="float:left; margin: 0em 1em;"}
     </div>
     <!--概要-->
     <div class="column three-fourth p-3">
-        <h1 class="display-4">なりきりAI 京町セイカについて</h1>
+        <h1 class="display-4">"なりきりAI 京町セイカ"について</h1>
         <p class="lead">なりきりAI 京町セイカは、京都府精華町の広報キャラクター「京町セイカ」をAI（対話システム）化し、精華町に関するさまざまな情報提供、問い合わせ対応、役場内の案内や観光案内などのタスク対話、気軽な雑談対話を精華町役場の来庁者の皆様に提供する実証実験です。
         <a href="https://narikiri-qa.jp/">"なりきりAIプロジェクト"</a>の一環として、雑談におけるキャラクター性のみでなく、雑談以外の多様なタスク対話においてもキャラクター性を発揮しながら、自然かつ円滑に多種多様なタスクを遂行する対話システム技術を提案し、実証実験を通してその有効性を検証しています。</p>
     </div>
@@ -27,7 +27,12 @@ title: "なりきりAI 京町セイカについて"
       その一部をご紹介させていただきます．</p>
     </div>
   </div>
-
+  <div class="row columns">
+    <!-- Youtubeのニュース -->
+    <div class="column p-3">
+        <iframe width="640" height="480" src="https://www.youtube.com/embed/47LsuC5-bAA?si=C41VX43NVo4NWGpK&amp;start=330" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
   <div class="row columns">
     <!--記事1-->
     <div class="column one-fourth p-3">
@@ -57,7 +62,9 @@ title: "なりきりAI 京町セイカについて"
     <!---->
     <div class="column three-fourths p-3">
         <h1 class="display-4">論文誌への掲載</h1>
-        <p class="lead">キャラクター性を付与した雑談・タスク対話の両方が可能な対話システムを開発するためのデータ収集・アーキテクチャ・運用の方法論と、実証実験を通して得られた利用者・提供者（役場）のさまざまなフィードバックのケーススタディをまとめ、人工知能学会論文誌に投稿・採録されています．ご興味のある方はぜひご笑覧ください。</p>
+        <p class="lead">キャラクター性を付与した雑談・タスク対話の両方が可能な対話システムを開発するためのデータ収集・アーキテクチャ・運用の方法論と、実証実験を通して得られた利用者・提供者（役場）様からのさまざまなフィードバックをケーススタディとしてまとめました。
+        この論文は人工知能学会論文誌に投稿・採録されています．公共施設での対話システムの実用や、キャラクター性を付与した対話システムの構築、また、今回のようなご当地のキャラクターのAI（対話システム）化にご興味のある方にぜひお読みいただきたいと思っております。
+        また、案件や開発につきましては、メールにてご連絡ください。</p>
     </div>
   </div>
 </div>
