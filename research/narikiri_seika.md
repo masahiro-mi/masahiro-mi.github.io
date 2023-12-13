@@ -37,25 +37,21 @@ title: "なりきりAI 京町セイカについて"
       </div>
     </div>
     <div class="column one-half p-3">
-      <div class="row columns">
-        <!--記事1-->
-        <div class="column one-half p-3">
-            <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 75%; padding-top: 120px;"><a href="https://journal.ntt.co.jp/article/7561" data-iframely-url="//iframely.net/dYDybhW"></a></div></div><script async="" src="//iframely.net/embed.js"></script>
-        </div>
-        <!--記事2-->
-        <div class="column one-half p-3">
-            <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px;"><a href="https://group.ntt/jp/topics/2021/11/12/ai_seika.html" data-iframely-url="//iframely.net/3BHp1tA"></a></div></div><script async src="//iframely.net/embed.js"></script>
-        </div>
+      <!--記事1-->
+      <div class="column one-half p-3">
+          <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 75%; padding-top: 120px;"><a href="https://journal.ntt.co.jp/article/7561" data-iframely-url="//iframely.net/dYDybhW"></a></div></div><script async="" src="//iframely.net/embed.js"></script>
       </div>
-      <div class="row columns">
-        <!--記事3-->
-        <div class="column one-half p-3">
-            <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.3333%; padding-top: 120px;"><a href="https://www.asahi.com/articles/ASN767DSSN73PLZB001.html" data-iframely-url="//iframely.net/Amrkkes"></a></div></div><script async src="//iframely.net/embed.js"></script>
-        </div>
-        <!--記事4-->
-        <div class="column one-half p-3">
-            <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px;"><a href="https://mainichi.jp/articles/20211117/ddl/k26/010/299000c" data-iframely-url="//iframely.net/ESz5KKc"></a></div></div><script async src="//iframely.net/embed.js"></script>
-        </div>
+      <!--記事2-->
+      <div class="column one-half p-3">
+          <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px;"><a href="https://group.ntt/jp/topics/2021/11/12/ai_seika.html" data-iframely-url="//iframely.net/3BHp1tA"></a></div></div><script async src="//iframely.net/embed.js"></script>
+      </div>
+      <!--記事3-->
+      <div class="column one-half p-3">
+          <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.3333%; padding-top: 120px;"><a href="https://www.asahi.com/articles/ASN767DSSN73PLZB001.html" data-iframely-url="//iframely.net/Amrkkes"></a></div></div><script async src="//iframely.net/embed.js"></script>
+      </div>
+      <!--記事4-->
+      <div class="column one-half p-3">
+          <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px;"><a href="https://mainichi.jp/articles/20211117/ddl/k26/010/299000c" data-iframely-url="//iframely.net/ESz5KKc"></a></div></div><script async src="//iframely.net/embed.js"></script>
       </div>
     </div>
   </div>
