@@ -66,14 +66,17 @@ description: これは日本語を対象とする対話システムの構築に�
 |:--- |:--- |:--- |:---:|:---:|:--- |
 | [GSK2018-A 対照群付き高齢者コーパス](https://alaginrc.nict.go.jp/slc-outline.html#5)  | インタビュー80件ほか | 音声及び書き起こし | GSK会員限定無料配布 | 不可 | 高齢者群と非高齢者群に対するインタビューを収録。インタビューの内容は「最近あった楽しい出来事」や、自己のエピソードに関する10個の質問について語る自然文課題など数種類ある。 |
 | [AI王 コンペティション学習用データセット](https://sites.google.com/view/project-aio/competition2#h.i5iz9xhxq2us)  | 22,355問ほか | テキスト | CC BY-NC-ND 4.0? | 同左 | 日本語質問応答研究のためのクイズ問題のデータセット。JSON形式にて（正規化された）問題文、回答が格納される。 |
+| [AI王+Wikiコンテキスト追加データセット](https://huggingface.co/datasets/hotchpotch/jaqket_v1_qa_wikija_context)  | 2939+980問ほか | テキスト | CC BY-NC-SA 4.0 DEED | 同左 | AI王 公式配布データセット(JAQKET)へ、Wikipedia のコンテキストを追加したデータセットです。|
 | [大声解 The Corpus of Oral Presentations in English (COPE)](https://www.timehill.net/asr-mt.html)  | 合計4時間 | 音声および書き起こし | 無償 | 不可 | 『日本語話し言葉コーパス（CSJ）』の模擬講演の一部との対照研究ができるように収録。加えて非流暢性ラベルや節境界ラベルを付与。 |
 | [JGLUE: Japanese General Language Understanding Evaluation](https://github.com/yahoojapan/JGLUE)  | 約7万件 | テキスト | CC BY-SA 4.0 | 同左 | 日本語言語理解ベンチマークの一部に質問応答タスクを収録。JSQuADとJCommonsenseQAの2種があり、それぞれTrain/Dev/Testに分割済み。 |
 | [Japanese Visual Genome VQA dataset](https://github.com/yahoojapan/ja-vg-vqa)  | 約80万件 | テキスト | CC 4.0 | 同左 | 日本語のVisual Question Answering (VQA)データセット。QA部分のみ配布され、画像は別途Visual Genomeからダウンロードする。 |
 | [YJ Chat Detection Dataset](https://randd.yahoo.co.jp/jp/softwaredata#yjcdd)  | 約1.5万発話| テキスト | 無償? | 不可 | Intelligent Assystantへの話しかけに対して、雑談かそれ以外かのラベルを振ったデータセット。 |
 | [Yahoo!知恵袋データ（第3版）](https://randd.yahoo.co.jp/jp/softwaredata#ydata)  | Q約263万、A約670万件| テキスト | 無償? | 不可 | Yahoo!知恵袋に投稿されたQAデータ。質問と回答以外に質問のカテゴリ、投稿および解決の日時、ベストアンサーフラグなども付与。 |
+| [japanese-contextual-qa-chat](https://github.com/oshizo/japanese-contextual-qa-chat) | 合計10万件程度 | テキスト | MITライセンス | 可 | 抽出型QAのデータセットJSQuadとJaQuADの回答を、チャットボットの回答のような形式に変換したデータです。 | 
 
 
 # 更新履歴
+- 2023.12.13 japanese-contextual-qa-chatほか計1件の情報を追加しました
 - 2023.10.11 Roseblue ゲームシナリオデータセットほか計3件の情報を追加しました
 - 2023.7.6 日本語日常対話コーパス（Japanese Daily Dialogue）の情報を追加しました
 - 2023.3.3 OjousamaTalkScriptDatasetの情報を追加しました
