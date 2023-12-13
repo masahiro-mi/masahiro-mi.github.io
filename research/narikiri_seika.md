@@ -7,8 +7,10 @@ title: "なりきりAI 京町セイカについて"
 <div class="container-xl">
   <div class="row columns">
     <!--アイキャッチ-->
-    <div class="column one-fourth p-3 centered">
-      <img src="https://masahiro-mi.github.io/img/SeikaSS.jpg" style="width:100%; height:100%">
+    <div class="column one-fourth p-3">
+      <div class="centered">
+        <img src="https://masahiro-mi.github.io/img/SeikaSS.jpg" style="width:100%; height:100%">
+      </div>
     </div>
     <!--概要-->
     <div class="column three-fourths p-3">
@@ -29,10 +31,10 @@ title: "なりきりAI 京町セイカについて"
   </div>
   <div class="row columns">
     <!-- Youtubeのニュース -->
-    <div class="column one-halfs p-3">
+    <div class="column one-half p-3">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/47LsuC5-bAA?si=C41VX43NVo4NWGpK&amp;start=330" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <div class="column one-halfs p-3">
+    <div class="column one-half p-3">
       <div class="row columns">
         <!--記事1-->
         <div class="column one-fourth p-3">
