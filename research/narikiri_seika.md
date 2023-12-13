@@ -32,7 +32,9 @@ title: "なりきりAI 京町セイカについて"
   <div class="row columns">
     <!-- Youtubeのニュース -->
     <div class="column one-half p-3">
+      <div class="row columns">
         <iframe width="640" height="480" src="https://www.youtube.com/embed/47LsuC5-bAA?si=C41VX43NVo4NWGpK&amp;start=330" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
     </div>
     <div class="column one-half p-3">
       <div class="row columns">
