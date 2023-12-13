@@ -8,7 +8,7 @@ title: "なりきりAI 京町セイカについて"
   <div class="row columns">
     <!--アイキャッチ-->
     <div class="column one-fourth p-3">
-      <div class="flex centered">
+      <div class="centered">
         <img src="https://masahiro-mi.github.io/img/SeikaSS.jpg" style="width:100%; height:100%">
       </div>
     </div>
@@ -32,26 +32,26 @@ title: "なりきりAI 京町セイカについて"
   <div class="row columns">
     <!-- Youtubeのニュース -->
     <div class="column one-half p-3">
-        <iframe src="https://www.youtube.com/embed/47LsuC5-bAA?si=C41VX43NVo4NWGpK&amp;start=330" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/47LsuC5-bAA?si=C41VX43NVo4NWGpK&amp;start=330" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="column one-half p-3">
       <div class="row columns">
         <!--記事1-->
-        <div class="column one-fourth p-3">
+        <div class="column p-3">
             <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 75%; padding-top: 120px;"><a href="https://journal.ntt.co.jp/article/7561" data-iframely-url="//iframely.net/dYDybhW"></a></div></div><script async="" src="//iframely.net/embed.js"></script>
         </div>
         <!--記事2-->
-        <div class="column one-fourth p-3">
+        <div class="column p-3">
             <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px;"><a href="https://group.ntt/jp/topics/2021/11/12/ai_seika.html" data-iframely-url="//iframely.net/3BHp1tA"></a></div></div><script async src="//iframely.net/embed.js"></script>
         </div>
       </div>
       <div class="row columns">
         <!--記事3-->
-        <div class="column one-fourth p-3">
+        <div class="column p-3">
             <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.3333%; padding-top: 120px;"><a href="https://www.asahi.com/articles/ASN767DSSN73PLZB001.html" data-iframely-url="//iframely.net/Amrkkes"></a></div></div><script async src="//iframely.net/embed.js"></script>
         </div>
         <!--記事4-->
-        <div class="column one-fourth p-3">
+        <div class="column p-3">
             <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px;"><a href="https://mainichi.jp/articles/20211117/ddl/k26/010/299000c" data-iframely-url="//iframely.net/ESz5KKc"></a></div></div><script async src="//iframely.net/embed.js"></script>
         </div>
       </div>
