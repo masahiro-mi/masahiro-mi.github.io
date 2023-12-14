@@ -4,9 +4,9 @@ title: "なりきりAI 京町セイカについて"
 ---
 
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-<div class="container-xl">
+<div class="container-xl px-3 my-5 markdown-body">
   <div class="row columns">
-    <h1 class="display-4">"なりきりAI 京町セイカ"について</h1>
+    <h1>"なりきりAI 京町セイカ"について</h1>
     <!--アイキャッチ-->
     <div class="column one-third p-3">
       <div class="centered">
