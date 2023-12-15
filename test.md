@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Research"
+title: "なりきりAI 京町セイカについて"
 ---
 
 # 最近の研究トピック
