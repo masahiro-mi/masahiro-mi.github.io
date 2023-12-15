@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "なりきりAI 京町セイカについて"
+featured_image: 'https://masahiro-mi.github.io/img/SeikaSS.jpg'
 ---
 
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
