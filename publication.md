@@ -85,3 +85,5 @@ title: "Publications"
 - Graham Neubig, Shinsuke Mori, **Masahiro Mizukami** (2013). ***A Framework and Tool for Collaborative Extraction of Reliable Information.*** the Workshop on Language Processing and Crisis Information 2013.
 - **水上雅博**, Graham Neubig, Sakriani Sakti, 戸田智基, 中村哲 (2013). ***話し言葉における言語情報の個人性変換における変換辞書拡張.*** 電子情報通信学会音声研究会 (SP), 千葉.
 - **水上雅博**, Graham Neubig, Sakriani Sakti, 戸田智基, 中村哲 (2013). ***話し言葉の書き起こし文章の話者性の変換.*** 人工知能学会全国大会論文集 第 27 回全国大会 (2013).
+
+## Books
