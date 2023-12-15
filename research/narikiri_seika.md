@@ -2,7 +2,7 @@
 layout: default
 title: "なりきりAI 京町セイカについて"
 description: なりきりAI 京町セイカは、京都府精華町の広報キャラクター「京町セイカ」をAI（対話システム）化し、精華町に関するさまざまな情報提供、問い合わせ対応、役場内の案内や観光案内などのタスク対話、気軽な雑談対話を精華町役場の来庁者の皆様に提供する対話システムです。"なりきりAIプロジェクト"の一環として、雑談におけるキャラクター性のみでなく、雑談以外の多様なタスク対話においてもキャラクター性を発揮しながら、自然かつ円滑に多種多様なタスクを遂行する対話システム技術を提案し、その有効性を検証しています。2021年11月から2022年1月末までの3ヶ月間、なりきりAI 京町セイカは実証実験として精華町役場での案内窓口対応の一部に携わり、町内外からの多数の来庁者のみなさまにご利用をいただきました。
-preview: https://masahiro-mi.github.io/img/SeikaSS.jpg
+preview: "https://individuality.jp/img/SeikaSS.jpg"
 ---
 
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
@@ -12,7 +12,7 @@ preview: https://masahiro-mi.github.io/img/SeikaSS.jpg
     <!--アイキャッチ-->
     <div class="column one-third p-3">
       <div class="centered">
-        <img src="https://masahiro-mi.github.io/img/SeikaSS.jpg" style="width:100%; height:100%">
+        <img src="https://individuality.jp/img/SeikaSS.jpg" style="width:100%; height:100%">
       </div>
     </div>
     <!--概要-->
