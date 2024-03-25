@@ -1,13 +1,12 @@
 ---
 layout: default
 title: "日本語対話コーパス"
-description: これは日本語を対象とする対話システムの構築に利用できる言語資源のリストです。本リストは、理化学研究所 吉野 幸一郎さん発案のもと、C4A研究所 中野 幹生さん、東北大学 赤間 怜奈さん、大阪大学 駒谷 和範さん、JAIST 吉川 禎洋さん、リクルート 林部 祐太さん、京都大学　児玉 貴志さんにご協力をいただき、作成いたしました。
 ---
 # 日本語対話コーパス
 
 これは日本語を対象とする対話システムの構築に利用できる言語資源のリストです。
 
-本リストは、理化学研究所 吉野 幸一郎さん発案のもと、C4A研究所 中野 幹生さん、東北大学 赤間 怜奈さん、大阪大学 駒谷 和範さん、JAIST 吉川 禎洋さん、リクルート 林部 祐太さん、京都大学　児玉 貴志さんにご協力をいただき、作成いたしました。
+本リストは、理化学研究所 吉野 幸一郎さん発案のもと、C4A研究所 中野 幹生さん、東北大学 赤間 怜奈さん、大阪大学 駒谷 和範さん、JAIST 吉川 禎洋さん、リクルート 林部 祐太さん、京都大学 児玉 貴志さん、東北大学 徳久 良子さんにご協力をいただき、水上雅博が作成いたしました（所属はリスト作成および更新当時のものです）。
 
 もしこのリストに載っていないものや、新たにコーパスをリリースした際には是非、[issue](https://github.com/masahiro-mi/masahiro-mi.github.io/issues)やメールで教えてください。
 
@@ -56,6 +55,14 @@ description: これは日本語を対象とする対話システムの構築に�
 | [Roseblue ゲームシナリオデータセット](https://gitlab.com/open_contents_datasets/Rosebleu)  | 約550万文字  | テキスト対話 | Apache License 2.0 | 可 | 10タイトルのゲームのシナリオから、話者と発話を抜き出したデータセット。成人向けシナリオもあるため、一部にセクシャルな描写を含む。| 
 | [Character Conversation Dataset](https://github.com/matsuvr/characterconversationdataset) | 約2万文字  | テキスト対話 |Apache License 2.0| 可 | 公開終了した同人ノベルゲームのシナリオから、話者と発話を抜き出したデータセット。 | 
 | [megagonlabs/instruction_ja](https://github.com/megagonlabs/instruction_ja) |669対話  | テキスト対話 | MITライセンス | 可 |[kunishou/hh-rlhf-49k-ja](https://huggingface.co/datasets/kunishou/hh-rlhf-49k-ja)の一部を人手で改変して自然な日本語表現にした日本語指示データ | 
+| [感想付きニュース雑談対話コーパス](https://github.com/fukanarita/newschat-with-impression) | 合計1047対話  | テキスト対話 | MITライセンス | 可 | ニュース記事と、それに対するツイート、ニュースに関連する雑談対話の三つ組のデータ。雑談対話はWizard-of-Oz方式による人同士の対話。 | 
+| [BPersona-chat](https://github.com/fukanarita/newschat-with-impression) | 合計1495+250対話  | テキスト対話 | CC BY-NC 4.0 | 不可 | 日本語と英語で収集したペルソナチャットと、それをプロの翻訳者、翻訳モデルにより互いに英語と日本語に翻訳したデータ。ペルソナチャットはクラウドソーシングで収集。 | 
+| [対話応答選択テストセット](https://github.com/cl-tohoku/eval-via-selection) | 1,019対話  | テキスト対話 | 記載なし | 同左 | 雑談対話応答生成システムの評価のためのデータセット。OpenSubtitlesとDailyDialogから発話を抽出して人手評価を付与。 | 
+| [RealPersonaChat](https://github.com/nu-dialogue/real-persona-chat/) | 13,583対話  | テキスト対話 | CC BY-SA 4.0 | 可 | 話者本人の（ロールプレイではない）ペルソナと性格特性を持つ雑談対話データセット。ペルソナの個数は233個。 | 
+| [JMultiWOZ: Japanese Multi-Domain Wizard-of-Oz Dataset](https://github.com/nu-dialogue/jmultiwoz) | 4,254対話  | テキスト対話 | CC BY-SA 4.0 | 可 | マルチドメインタスク指向型対話データセット。日本国内へにおける観光名所、宿泊施設、飲食店、買い物、交通、天気に関するドメインを含んだ旅行を検討する対話をWizard-of-Oz方式で収集。 | 
+
+
+
 
   
 # 対話関連コーパス
@@ -76,6 +83,7 @@ description: これは日本語を対象とする対話システムの構築に�
 
 
 # 更新履歴
+- 2024.3.25 感想付きニュース雑談対話コーパスほか計5件の情報を追加しました
 - 2023.12.13 japanese-contextual-qa-chatほか計1件の情報を追加しました
 - 2023.10.11 Roseblue ゲームシナリオデータセットほか計3件の情報を追加しました
 - 2023.7.6 日本語日常対話コーパス（Japanese Daily Dialogue）の情報を追加しました
