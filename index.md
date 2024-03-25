@@ -2,7 +2,22 @@
 layout: default
 ---
 # Masahiro MIZUKAMI
+<<<<<<< HEAD
 ![著者近影](https://masahiro-mi.github.io/img/photo.jpg){: style="float:left; margin: 0em 1em;"}
+=======
+![著者近影](https://masahiro-mi.github.io/img/IMG_1406s.JPG){: style="float:left; margin: 0em 1em; width: 140px; height: 210px;"} 
+
+水上 雅博 /  Masahiro Mizukami, Ph. D
+
+2012年に同志社大学理工学部を卒業．2014年，2017年にそれぞれ奈良先端科学技術大学院大学 情報科学研究科 修士課程，博士課程を修了．
+2017年より日本電信電話株式会社 コミュニケーション科学基礎研究所勤務（現職）．
+博士（工学）．雑談対話システムの研究，特に，対話システムに特定の話者を再現する技術の研究開発に従事．
+
+
+[日本電信電話株式会社 コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html) [協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html) [インタラクション対話研究グループ](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html) 研究主任
+
+mail: masahiro.mizukami (at) ntt.co.jp
+>>>>>>> e4017cd (Update index.md)
 
 私は水上雅博です。
 奈良先端科学技術大学院大学で修士および博士（工学）を取得しました。  
@@ -13,6 +28,18 @@ layout: default
 
 <br clear="left">
 
+<<<<<<< HEAD
+=======
+
+
+## Research interests
+- 個人性再現／話者再現
+- 個人性判定／話者判定
+- 対話分析，対話の品質，妥当性の評価
+- 対話における無意識的現象の分析（エントレインメント等）
+
+
+>>>>>>> e4017cd (Update index.md)
 ## News
 - 2020.2	オーム社より、我々が執筆した[『Pythonでつくる対話システム』](https://www.ohmsha.co.jp/book/9784274224799/) が出版されました。
 - 2019.12	人工知能学会 対話システムシンポジウム（SIG-SLUD）対話システムライブコンペティション２にて、我々の発表した『自然な流れに沿って対話を進めるアジェンダベース雑談対話システム』がオープントラック優秀賞を受賞しました．
