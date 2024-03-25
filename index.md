@@ -2,10 +2,7 @@
 layout: default
 ---
 # Masahiro MIZUKAMI
-<<<<<<< HEAD
-![著者近影](https://masahiro-mi.github.io/img/photo.jpg){: style="float:left; margin: 0em 1em;"}
-=======
-![著者近影](https://masahiro-mi.github.io/img/IMG_1406s.JPG){: style="float:left; margin: 0em 1em; width: 140px; height: 210px;"} 
+![著者近影](https://masahiro-mi.github.io/img/IMG_1406s.JPG){: style="float:left; margin: 0em 5em; width: 185px; height: 255px;"} 
 
 水上 雅博 /  Masahiro Mizukami, Ph. D
 
@@ -17,19 +14,10 @@ layout: default
 [日本電信電話株式会社 コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html) [協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html) [インタラクション対話研究グループ](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html) 研究主任
 
 mail: masahiro.mizukami (at) ntt.co.jp
->>>>>>> e4017cd (Update index.md)
 
-私は水上雅博です。
-奈良先端科学技術大学院大学で修士および博士（工学）を取得しました。  
-大学院での研究テーマは対話システムです。特に、対話システムの個人性のモデリング（話者の再現や、新たな性格や思考の学習）に興味があります。   
-現在は[日本電信電話株式会社 コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html)の[協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html), [インタラクション対話研究グループ](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html)で研究員をしています。
-大学院に引き続き、対話システムにおける個人性のモデリングや、特定の人のコピーとなるAIを学習する方法について研究を進めています。
-共同研究等でのご連絡は masahiro.mizukami.df (at) hco.ntt.co.jp にご連絡ください。
 
 <br clear="left">
 
-<<<<<<< HEAD
-=======
 
 
 ## Research interests
@@ -39,7 +27,6 @@ mail: masahiro.mizukami (at) ntt.co.jp
 - 対話における無意識的現象の分析（エントレインメント等）
 
 
->>>>>>> e4017cd (Update index.md)
 ## News
 - 2020.2	オーム社より、我々が執筆した[『Pythonでつくる対話システム』](https://www.ohmsha.co.jp/book/9784274224799/) が出版されました。
 - 2019.12	人工知能学会 対話システムシンポジウム（SIG-SLUD）対話システムライブコンペティション２にて、我々の発表した『自然な流れに沿って対話を進めるアジェンダベース雑談対話システム』がオープントラック優秀賞を受賞しました．
