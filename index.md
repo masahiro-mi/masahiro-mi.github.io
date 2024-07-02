@@ -8,11 +8,13 @@ title: "Individuality.jp"
 水上 雅博 /  Masahiro Mizukami, Ph. D
 
 2012年に同志社大学理工学部を卒業．2014年，2017年にそれぞれ奈良先端科学技術大学院大学 情報科学研究科 修士課程，博士課程を修了．
-2017年より日本電信電話株式会社 コミュニケーション科学基礎研究所勤務（現職）．
+2017年より日本電信電話株式会社 コミュニケーション科学基礎研究所，2024年より日本電信電話株式会社 コミュニケーション科学基礎研究所および人間情報研究所勤務（現職）．
 博士（工学）．雑談対話システムの研究，特に，対話システムに特定の話者を再現する技術の研究開発に従事．
 
 
-[日本電信電話株式会社 コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html) [協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html) [インタラクション対話研究グループ](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html) 研究主任
+[日本電信電話株式会社 コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html) [協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html) [インタラクション対話研究グループ](http://www.kecl.ntt.co.jp/rps/english/lab_e/nnovative_lab_e.html)
+[日本電信電話株式会社 人間情報研究所](https://www.rd.ntt/hil/) 思考処理研究プロジェクト
+研究主任
 
 mail: masahiro.mizukami (at) ntt.co.jp
 

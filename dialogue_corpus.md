@@ -57,7 +57,7 @@ description: これは日本語を対象とした、対話システムの構築�
 | [Character Conversation Dataset](https://github.com/matsuvr/characterconversationdataset) | 約2万文字  | テキスト対話 |Apache License 2.0| 可 | 公開終了した同人ノベルゲームのシナリオから、話者と発話を抜き出したデータセット。 | 
 | [megagonlabs/instruction_ja](https://github.com/megagonlabs/instruction_ja) |669対話  | テキスト対話 | MITライセンス | 可 |[kunishou/hh-rlhf-49k-ja](https://huggingface.co/datasets/kunishou/hh-rlhf-49k-ja)の一部を人手で改変して自然な日本語表現にした日本語指示データ | 
 | [感想付きニュース雑談対話コーパス](https://github.com/fukanarita/newschat-with-impression) | 合計1047対話  | テキスト対話 | MITライセンス | 可 | ニュース記事と、それに対するツイート、ニュースに関連する雑談対話の三つ組のデータ。雑談対話はWizard-of-Oz方式による人同士の対話。 | 
-| [BPersona-chat](https://github.com/fukanarita/newschat-with-impression) | 合計1495+250対話  | テキスト対話 | CC BY-NC 4.0 | 不可 | 日本語と英語で収集したペルソナチャットと、それをプロの翻訳者、翻訳モデルにより互いに英語と日本語に翻訳したデータ。ペルソナチャットはクラウドソーシングで収集。 | 
+| [BPersona-chat](https://github.com/cl-tohoku/BPersona-chat) | 合計1495+250対話  | テキスト対話 | CC BY-NC 4.0 | 不可 | 日本語と英語で収集したペルソナチャットと、それをプロの翻訳者、翻訳モデルにより互いに英語と日本語に翻訳したデータ。ペルソナチャットはクラウドソーシングで収集。 | 
 | [対話応答選択テストセット](https://github.com/cl-tohoku/eval-via-selection) | 1,019対話  | テキスト対話 | 記載なし | 同左 | 雑談対話応答生成システムの評価のためのデータセット。OpenSubtitlesとDailyDialogから発話を抽出して人手評価を付与。 | 
 | [RealPersonaChat](https://github.com/nu-dialogue/real-persona-chat/) | 13,583対話  | テキスト対話 | CC BY-SA 4.0 | 可 | 話者本人の（ロールプレイではない）ペルソナと性格特性を持つ雑談対話データセット。ペルソナの個数は233個。 | 
 | [JMultiWOZ: Japanese Multi-Domain Wizard-of-Oz Dataset](https://github.com/nu-dialogue/jmultiwoz) | 4,254対話  | テキスト対話 | CC BY-SA 4.0 | 可 | マルチドメインタスク指向型対話データセット。日本国内へにおける観光名所、宿泊施設、飲食店、買い物、交通、天気に関するドメインを含んだ旅行を検討する対話をWizard-of-Oz方式で収集。 | 
@@ -84,6 +84,7 @@ description: これは日本語を対象とした、対話システムの構築�
 
 
 # 更新履歴
+- 2024.7.2 BPersona-chatのURLを修正しました
 - 2024.4.2 本ページの説明文を修正しました
 - 2024.3.25 感想付きニュース雑談対話コーパスほか計5件の情報を追加しました
 - 2023.12.13 japanese-contextual-qa-chatほか計1件の情報を追加しました
