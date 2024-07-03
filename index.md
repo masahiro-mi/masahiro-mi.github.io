@@ -12,16 +12,10 @@ title: "Individuality.jp"
 博士（工学）．
 雑談対話システムの研究，特に，対話システムに特定の話者を再現する技術の研究開発に従事．
 
-日本電信電話株式会社
-
-[コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html) [協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html) [実世界インタラクション研究グループ](https://www.rd.ntt/e/cs/team_project/icl/ir/)
-
+日本電信電話株式会社 [コミュニケーション科学基礎研究所](http://www.kecl.ntt.co.jp/english/index.html) [協創情報研究部](http://www.kecl.ntt.co.jp/icl/icl/interaction_research.html) [実世界インタラクション研究グループ](https://www.rd.ntt/e/cs/team_project/icl/ir/)，
 [人間情報研究所](https://www.rd.ntt/hil/) 思考処理研究プロジェクト
 
 研究主任
-
-mail: masahiro.mizukami (at) ntt.co.jp
-
 
 <br clear="left">
 
