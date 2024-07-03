@@ -2,6 +2,8 @@
 layout: default
 title: "Individuality.jp"
 ---
+
+
 # 略歴
 ![著者近影](https://masahiro-mi.github.io/img/IMG_1406s.JPG){: style="float:left; margin: 0em 5em; width: 185px; height: 255px;"} 
 

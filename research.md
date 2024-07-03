@@ -3,6 +3,7 @@ layout: default
 title: "Research"
 ---
 
+
 # 最近の研究トピック
 
 ## 対話システムへのキャラクター性の付与
