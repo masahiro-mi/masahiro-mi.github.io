@@ -1,0 +1,1 @@
+[![pages-build-deployment](https://github.com/masahiro-mi/masahiro-mi.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/masahiro-mi/masahiro-mi.github.io/actions/workflows/pages/pages-build-deployment)
