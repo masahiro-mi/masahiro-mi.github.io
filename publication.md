@@ -6,7 +6,7 @@ title: "Publications"
 
 # Publications
 
-## Jouenals
+## Journals
 - **水上雅博**, 杉山弘晃, 有本庸浩, 東中竜一郎, 光田航, 小林哲生 (2023). ***なりきり AI プラットフォームを活用した自治体連携による案内業務対話システム構築.*** 人工知能学会論文誌, 38-3, pp. B-MA2_1-14.
 - Hiromi Narimatsu, Hiroaki Sugiyama, Masahiro Mizukami, Tsunehiro Arimoto (2023). ***Chat agents respond more empathetically by using hearsay experience.*** Frontiers in Robotics and AI, 10.
 - 東中竜一郎, 荒木雅弘, 塚原裕史, **水上雅博** (2022). ***雑談対話システムにおける対話破綻を生じさせる発話の類型化.*** 自然言語処理, 29-2, pp. 443-466.
