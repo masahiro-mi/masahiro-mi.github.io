@@ -125,6 +125,7 @@ def generate_index_of_all_pages(filename, list_of_pages):
     previous_depth = 0
     for child in sorted(list_of_pages):
 #        if child.startswith(pagename) and child != pagename:
+            if child[0] == "_": continue
             child_page_depth = len(child.split("_"))
             child_page_name = child.split("_")[-1]
             if previous_depth <= child_page_depth:
@@ -132,8 +133,8 @@ def generate_index_of_all_pages(filename, list_of_pages):
             else:
                 for i in range(0, child_page_depth-1):
                     #print('  '*(i-1) + "* "+child.split("_")[i])
-                    new_data.extend('  '*(i-1) + "* "+child.split("_")[i]+'\n')
-                new_data.extend('  '*(child_page_depth-1) + "* "+"["+child_page_name+"]("+base_url+child+")\n")
+                    new_data.extend('  '*i + "* "+child.split("_")[i]+'\n')
+                new_data.extend('  '*child_page_depth + "* "+"["+child_page_name+"]("+base_url+child+")\n")
 
     new_data.extend(data[index_eol:])
 
