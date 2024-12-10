@@ -128,7 +128,7 @@ def generate_index_of_all_pages(filename, list_of_pages):
             if child[0] == "_": continue
             child_page_depth = len(child.split("_"))
             child_page_name = child.split("_")[-1]
-            new_data.extend('  '*(child_page_depth-1) + "* "+"["+child_page_name+"]("+base_url+child+")\n")
+            new_data.extend('  '*(child_page_depth-1) + "* "+"[["+child_page_name+"|"+child+"]]\n")
             
 
     new_data.extend(data[index_eol:])
@@ -137,35 +137,6 @@ def generate_index_of_all_pages(filename, list_of_pages):
         with open(dir+"/"+filename, "w") as f:
             f.writelines(new_data)
 
-
-def generate_list_of_illegal_pages(filename, list_of_illegal_pages):
-    #print(filename)
-    pagename = filename.split("/")[-1]
-    pagename = pagename.split(".")[0]
-    page_depth = len(pagename.split("_"))
-
-    sol = '<!-- start_list_of_illegal_named_pages -->\n'
-    eol = '<!-- end_list_of_illegal_named_pages -->\n'
-
-    data = []
-    with open(dir+"/"+filename) as f:
-        data = f.readlines()
-
-    try:
-        index_sol = data.index(sol)
-        index_eol = data.index(eol)
-    except Exception as e:
-        #print(e)
-        return
-    
-    new_data = []
-    new_data.extend(data[:index_sol+1])
-    new_data.extend([ "* [["+_+"]]\n" for _ in list_of_illegal_pages ])
-    new_data.extend(data[index_eol:])
-
-    if data != new_data:
-        with open(dir+"/"+filename, "w") as f:
-            f.writelines(new_data)
 
 def add_auto_link(filename, list_of_pages):
 #    print(list_of_pages)
@@ -200,8 +171,6 @@ def add_auto_link(filename, list_of_pages):
         with open(dir+"/"+filename, "w") as f:
             f.writelines(new_data)
 
-    #with open(dir+"/"+filename, "w") as f:
-    #    f.write(data)
     print(data)
 
     return
@@ -225,7 +194,7 @@ def replace_text_outside_markdown(text, target, replacement):
     # Markdown部分をプレースホルダで置き換え
     placeholders = []       # プレースホルダのリスト
     def placeholder_replacer(match):
-        placeholder = '<PLACEHOLDER-'+str(len(placeholders))+'>'  # 特殊な文字（適宜変更可能）
+        placeholder = '<PLACEHOLDER-'+str(len(placeholders))+'>'  # 特殊な文字
         placeholders.append(match.group(0))
         #print(placeholder, placeholders)
         return placeholder
@@ -241,7 +210,7 @@ def replace_text_outside_markdown(text, target, replacement):
     #print("replaced", text)
     # プレースホルダを元のMarkdown部分に戻す
     for i, placeholder_text in enumerate(placeholders):
-        placeholder = '<PLACEHOLDER-'+str(i)+'>'  # 特殊な文字（適宜変更可能）
+        placeholder = '<PLACEHOLDER-'+str(i)+'>'  # 特殊な文字
         text = text.replace(placeholder, placeholder_text, 1)
     #print("restored", text)
     return text
@@ -309,76 +278,13 @@ def preprocess():
         if filename == ".git" : continue
         pagename = filename.split("/")[-1]
         pagename = pagename.split(".")[0]
-        page_depth = pagename.split("_")
 
         list_of_pages.append(pagename)
 
-        next_structure = structure
-        is_illegal_page = False
-        for depth, name in enumerate(page_depth):
-#            print(depth, name)
-            next_structure = next_structure.get(name, "illegal")
-            if next_structure == "illegal":
-                is_illegal_page = True
-                list_of_illegal_pages.append(pagename)
-#                print(pagename, "is bad page name!")
-                add_notification_message(filename, "このページの名前は不適切です．")
-                break
-            if len(next_structure.keys()) == 0: 
-                break
-        
-        if not is_illegal_page: 
-            if pagename[0] != "_" and not pagename in list_of_linked_pages: 
-#                print(pagename, "is not linked!")
-                add_notification_message(filename, "このページはどこからもリンクされていません．")
-                list_of_illegal_pages.append(pagename)
-            else:
-                delete_notification_message(filename)
-            continue
     list_of_pages = list(set(list_of_pages))
     list_of_illegal_pages = list(set(list_of_illegal_pages))
     return list_of_pages, list_of_illegal_pages
 
-def add_notification_message(filename, message):
-
-    eol = '<!-- end_notification_message -->\n'
-    with open(dir+"/"+filename) as f:
-        data = f.readlines()
-
-    new_data = data
-    try:
-        index_eol = data.index(eol)
-        new_data = data[index_eol+1:]
-    except Exception as e:
-        pass
-
-    insert_message = f"""> [!CAUTION]
-> {message}
-<!-- end_notification_message -->
-"""
-
-    new_data.insert(0, insert_message)
-
-    if data != new_data:
-        with open(dir+"/"+filename, "w") as f:
-            f.writelines(new_data)
-        
-def delete_notification_message(filename):
-
-    eol = '<!-- end_notification_message -->\n'
-    with open(dir+"/"+filename) as f:
-        data = f.readlines()
-
-    new_data = data
-    try:
-        index_eol = data.index(eol)
-        new_data = data[index_eol+1:]
-    except Exception as e:
-        pass
-    
-    if data != new_data:
-        with open(dir+"/"+filename, "w") as f:
-            f.writelines(new_data)
 
 def generate_sidebar(list_of_pages):
     # generage Sidebar.md        
@@ -432,8 +338,6 @@ def main(list_of_pages, list_of_illegal_pages):
         generate_index_of_child_pages(filename, list_of_pages)
         # 子ページの一覧を生成
         generate_index_of_all_pages(filename, list_of_pages)
-        # 違反ページ一覧を生成
-        generate_list_of_illegal_pages(filename, list_of_illegal_pages)
 
 
 
