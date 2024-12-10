@@ -399,8 +399,8 @@ def generate_sidebar(list_of_pages):
                 if len(depth) > max_depth: continue
                 if pagename[0] == "_": continue
                 if depth[0] == index:
-                    f.write("  " * (len(depth) - 1) + "* ["+depth[-1]+"]("+base_url+pagename+")\n")
-                    print(depth, depth[-1], pagename)
+                    f.write("  " * (len(depth) - 1) + "* [["+depth[-1]+"|"+pagename+"]]\n")
+#                    print(depth, depth[-1], pagename)
 
         f.write("***\n")
         f.write("# 最近更新されたページ\n")
@@ -410,7 +410,7 @@ def generate_sidebar(list_of_pages):
             if filename[0] == "_": continue
             pagename=filename.split(".")[0]
             #print(pagename)
-            f.write("* ["+pagename+"]("+base_url+pagename+")\n")
+            f.write("* [["+pagename+"]]\n")
             i += 1
             if i >= 10: break
         f.write("<!-- end_list_of_recent_updated_pages -->\n")
