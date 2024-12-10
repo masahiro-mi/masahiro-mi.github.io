@@ -1,0 +1,83 @@
+name: Update-wiki
+
+on:
+#  wikiが更新されるたび
+  gollum:
+#  schedule:
+#    # 10分おきに実行
+#    - cron: '*/10 * * * *'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+permissions:
+  contents: write
+  
+jobs:
+  check-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:    
+      - name: setup python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.8'
+          architecture: 'x64'
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          
+      - name: Restore .wiki from cahce
+        uses: actions/cache/restore@v3
+        with:
+          path: .wiki
+          key: cache-wiki
+          restore-keys: cache-wiki
+          
+      - name: Check out main repo
+        uses: actions/checkout@v3
+      
+      - name: Check out wiki repo
+        uses: actions/checkout@v3
+        with:
+          repository: "${{ github.repository }}.wiki"
+          path: .wiki
+          fetch-depth: 100
+      
+      - name: ls-git and check update date
+        working-directory: .wiki
+        run: git config --global core.quotepath false
+      
+#      - name: run ./scripts/check_page_names
+#        run: python ./scripts/check_page_names.py
+
+      - name: run ./wiki_scripts/generate_tool_pages
+        run: |
+          python ./wiki_scripts/generate_tool_pages.py
+          python ./wiki_scripts/generate_tool_pages.py
+
+      - name: Stage and count changes
+        working-directory: .wiki
+        id: staging
+        run: |
+          git add .
+          git diff --staged --name-only 
+          echo "NUM_OF_STAGED=$(git diff --staged --name-only | wc -l)" >> $GITHUB_OUTPUT          
+
+      - name: Commit wiki pages
+        working-directory: .wiki
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: steps.staging.outputs.NUM_OF_STAGED > 0
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions@users.noreply.github.com"
+          git commit -m "${GITHUB_WORKFLOW}"
+          git push
+
+      - name: Store .wiki to cahce
+        uses: actions/cache/save@v3
+        with:
+          path: .wiki
+          key: cache-wiki
