@@ -65,6 +65,48 @@ def generate_index_of_page(filename):
         f.writelines(data[index_eol:])
 
 
+
+def generate_breadcrumbs(filename, list_of_pages):
+    #print(filename)
+
+    pagename = filename.split("/")[-1]
+    pagename = pagename.split(".")[0]
+    page_depth = len(pagename.split("_"))
+
+    sol = '<!-- start_breadcrumbs -->\n'
+    eol = '<!-- end_breadcrumbs -->\n'
+
+    data = []
+    with open(dir+"/"+filename) as f:
+        data = f.readlines()
+
+    try:
+        index_sol = data.index(sol)
+        index_eol = data.index(eol)
+    except Exception as e:
+        data.insert(0, sol)
+        data.insert(1, eol)
+        index_sol = data.index(sol)
+        index_eol = data.index(eol)
+        
+
+    new_data = []
+    new_data.extend(data[:index_sol+1])
+    bar = ""
+    for pos, name in enumerate(filename.split("_")):
+        bar += "[["+name+"|"+"_".join(filename.split("_")[:pos+1])+"]]"
+        if pos < len(filename.split("_")) - 1 :
+            bar += " > "
+    
+    bar += "\n"
+    new_data.append(bar)
+    
+    new_data.extend(data[index_eol:])
+
+    if data != new_data:
+        with open(dir+"/"+filename, "w") as f:
+            f.writelines(new_data)
+
 def generate_index_of_child_pages(filename, list_of_pages):
     #print(filename)
     pagename = filename.split("/")[-1]
@@ -330,6 +372,8 @@ def main(list_of_pages, list_of_illegal_pages):
         #print("main:"+pagename)
 
 
+        # 自動リンク
+        add_auto_link(filename, list_of_pages)
         # 自動リンク
         add_auto_link(filename, list_of_pages)
         # ページの目次を生成
