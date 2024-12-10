@@ -100,8 +100,10 @@ def generate_breadcrumbs(filename, list_of_pages):
         if pos < len(pagename.split("_")) - 1 :
             bar += " > "
     
-    bar += "\n"
-    new_data.append(bar)
+    # sidebar等は追加しない
+    if pagename[0] != "_":
+        bar += "\n"
+        new_data.append(bar)
 
     new_data.extend(data[index_eol:])
 
