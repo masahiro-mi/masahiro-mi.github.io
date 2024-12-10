@@ -134,10 +134,11 @@ def generate_index_of_child_pages(filename, list_of_pages):
     new_data = []
     new_data.extend(data[:index_sol+1])
     for child in sorted(list_of_pages):
+        print(child)
         if child.startswith(pagename) and child != pagename:
             child_page_depth = len(child.split("_"))
             child_page_name = "_".join(child.split("_")[page_depth:])
-            new_data.extend('  '*(child_page_depth-page_depth-1) + "* "+"["+child_page_name+"]("+base_url+child+")\n")
+            new_data.append('  '*(child_page_depth-page_depth-1) + "* "+"["+child_page_name+"]("+base_url+child+")\n")
     new_data.extend(data[index_eol:])
 
     if data != new_data:
