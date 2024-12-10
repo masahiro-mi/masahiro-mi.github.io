@@ -71,7 +71,6 @@ def generate_breadcrumbs(filename, list_of_pages):
 
     pagename = filename.split("/")[-1]
     pagename = pagename.split(".")[0]
-    page_depth = len(pagename.split("_"))
 
     sol = '<!-- start_breadcrumbs -->\n'
     eol = '<!-- end_breadcrumbs -->\n'
@@ -93,12 +92,12 @@ def generate_breadcrumbs(filename, list_of_pages):
     new_data = []
     new_data.extend(data[:index_sol+1])
     bar = ""
-    for pos, name in enumerate(filename.split("_")):
-        if "_".join(filename.split("_")[:pos+1]) in list_of_pages:
-            bar += "[["+name+"|"+"_".join(filename.split("_")[:pos+1])+"]]"
+    for pos, name in enumerate(pagename.split("_")):
+        if "_".join(pagename.split("_")[:pos+1]) in list_of_pages:
+            bar += "[["+name+"|"+"_".join(pagename.split("_")[:pos+1])+"]]"
         else:
             bar += name
-        if pos < len(filename.split("_")) - 1 :
+        if pos < len(pagename.split("_")) - 1 :
             bar += " > "
     
     bar += "\n"
