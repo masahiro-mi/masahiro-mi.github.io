@@ -94,13 +94,16 @@ def generate_breadcrumbs(filename, list_of_pages):
     new_data.extend(data[:index_sol+1])
     bar = ""
     for pos, name in enumerate(filename.split("_")):
-        bar += "[["+name+"|"+"_".join(filename.split("_")[:pos+1])+"]]"
+        if "_".join(filename.split("_")[:pos+1]) in list_of_pages:
+            bar += "[["+name+"|"+"_".join(filename.split("_")[:pos+1])+"]]"
+        else:
+            bar += name
         if pos < len(filename.split("_")) - 1 :
             bar += " > "
     
     bar += "\n"
     new_data.append(bar)
-    
+
     new_data.extend(data[index_eol:])
 
     if data != new_data:
@@ -164,7 +167,6 @@ def generate_index_of_all_pages(filename, list_of_pages):
 
     new_data = []
     new_data.extend(data[:index_sol+1])
-    previous_depth = 0
     for child in sorted(list_of_pages):
 #        if child.startswith(pagename) and child != pagename:
             if child[0] == "_": continue
@@ -375,7 +377,7 @@ def main(list_of_pages, list_of_illegal_pages):
         # 自動リンク
         add_auto_link(filename, list_of_pages)
         # 自動リンク
-        add_auto_link(filename, list_of_pages)
+        generate_breadcrumbs(filename, list_of_pages)
         # ページの目次を生成
         generate_index_of_page(filename)
         # 子ページの一覧を生成
