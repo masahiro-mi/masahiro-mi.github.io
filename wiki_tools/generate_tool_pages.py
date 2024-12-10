@@ -99,6 +99,49 @@ def generate_index_of_child_pages(filename, list_of_pages):
         with open(dir+"/"+filename, "w") as f:
             f.writelines(new_data)
 
+
+
+def generate_index_of_all_pages(filename, list_of_pages):
+    pagename = filename.split("/")[-1]
+    pagename = pagename.split(".")[0]
+
+    sol = '<!-- start_index_of_all_pages -->\n'
+    eol = '<!-- end_index_of_all_pages -->\n'
+
+    data = []
+    with open(dir+"/"+filename) as f:
+        data = f.readlines()
+
+    try:
+        index_sol = data.index(sol)
+        index_eol = data.index(eol)
+    except Exception as e:
+        #print(e)
+        return
+        
+
+    new_data = []
+    new_data.extend(data[:index_sol+1])
+    previous_depth = 0
+    for child in sorted(list_of_pages):
+#        if child.startswith(pagename) and child != pagename:
+            child_page_depth = len(child.split("_"))
+            child_page_name = "_".join(child.split("_")[-1])
+            if previous_depth <= child_page_depth:
+                new_data.extend('  '*(child_page_depth-1) + "* "+"["+child_page_name+"]("+base_url+child+")\n")
+            else:
+                for i in range(0, child_page_depth-1):
+                    #print('  '*(i-1) + "* "+child.split("_")[i])
+                    new_data.extend('  '*(i-1) + "* "+child.split("_")[i]+'\n')
+                new_data.extend('  '*(child_page_depth-1) + "* "+"["+child_page_name+"]("+base_url+child+")\n")
+
+    new_data.extend(data[index_eol:])
+
+    if data != new_data:
+        with open(dir+"/"+filename, "w") as f:
+            f.writelines(new_data)
+
+
 def generate_list_of_illegal_pages(filename, list_of_illegal_pages):
     #print(filename)
     pagename = filename.split("/")[-1]
