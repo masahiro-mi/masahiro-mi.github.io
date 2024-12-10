@@ -52,10 +52,10 @@ jobs:
 #      - name: run ./scripts/check_page_names
 #        run: python ./scripts/check_page_names.py
 
-      - name: run ./wiki_scripts/generate_tool_pages
+      - name: run ./wiki_tools/generate_tool_pages
         run: |
-          python ./wiki_scripts/generate_tool_pages.py
-          python ./wiki_scripts/generate_tool_pages.py
+          python ./wiki_tools/generate_tool_pages.py
+          python ./wiki_tools/generate_tool_pages.py
 
       - name: Stage and count changes
         working-directory: .wiki
