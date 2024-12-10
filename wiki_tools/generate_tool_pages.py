@@ -126,7 +126,7 @@ def generate_index_of_child_pages(filename, list_of_pages):
         index_sol = data.index(sol)
         index_eol = data.index(eol)
     except Exception as e:
-        #print(e)
+        print(e)
         return
         
 
