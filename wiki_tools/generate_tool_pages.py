@@ -8,7 +8,7 @@ from urllib.parse import unquote
 dir = "./.wiki"
 base_url = "https://individuality.jp/wiki/"
 
-with open("./wiki_scripts/config/structure.json") as f:
+with open("./wiki_tools/config/structure.json") as f:
     structure = json.load(f)
 
 def get_latest_update():
@@ -340,7 +340,7 @@ def delete_notification_message(filename):
 
 def generate_sidebar(list_of_pages):
     # generage Sidebar.md        
-    with open("./wiki_scripts/config/sidebar.json") as f:
+    with open("./wiki_tools/config/sidebar.json") as f:
         sidebar = json.load(f)
     #print(sidebar)
     with open(dir+"/_Sidebar.md", "w") as f:
