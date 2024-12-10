@@ -91,14 +91,14 @@ def generate_breadcrumbs(filename, list_of_pages):
 
     new_data = []
     new_data.extend(data[:index_sol+1])
-    bar = ""
+    bar = "▶️ "
     for pos, name in enumerate(pagename.split("_")):
         if "_".join(pagename.split("_")[:pos+1]) in list_of_pages:
             bar += "[["+name+"|"+"_".join(pagename.split("_")[:pos+1])+"]]"
         else:
             bar += name
         if pos < len(pagename.split("_")) - 1 :
-            bar += " > "
+            bar += " ▶️ "
     
     # sidebar等は追加しない
     if pagename[0] != "_":
