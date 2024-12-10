@@ -110,7 +110,7 @@ def generate_breadcrumbs(filename, list_of_pages):
             f.writelines(new_data)
 
 def generate_index_of_child_pages(filename, list_of_pages):
-    #print(filename)
+    print("generate_index_of_child_pages:", filename)
     pagename = filename.split("/")[-1]
     pagename = pagename.split(".")[0]
     page_depth = len(pagename.split("_"))
@@ -143,8 +143,7 @@ def generate_index_of_child_pages(filename, list_of_pages):
     if data != new_data:
         with open(dir+"/"+filename, "w") as f:
             f.writelines(new_data)
-
-
+    return
 
 def generate_index_of_all_pages(filename, list_of_pages):
     pagename = filename.split("/")[-1]
@@ -262,26 +261,6 @@ def replace_text_outside_markdown(text, target, replacement):
 def find_link(data):
     list_of_linked_pages = []
 
-    sol = '<!-- start_list_of_illegal_named_pages -->\n'
-    eol = '<!-- end_list_of_illegal_named_pages -->\n'
-    try:
-        index_sol = data.index(sol)
-        index_eol = data.index(eol)
-
-        data = data[:index_sol]+data[index_eol:]
-    except Exception as e:
-        pass
-
-    sol = '<!-- start_list_of_recent_updated_pages -->\n'
-    eol = '<!-- end_list_of_recent_updated_pages -->\n'
-    try:
-        index_sol = data.index(sol)
-        index_eol = data.index(eol)
-
-        data = data[:index_sol]+data[index_eol:]
-    except Exception as e:
-        pass
-
     pattern1 = rf'\[([^]]+)\]\(({base_url}[^)]+)\)'
     pattern2 = r'\[\[([^]]+)\]\]'
     for l in data:
@@ -308,7 +287,6 @@ def find_link(data):
 
 def preprocess():
     list_of_pages = []
-    list_of_illegal_pages = []
 
     # リンク先ページの一覧を取得
     list_of_linked_pages = []
@@ -326,9 +304,7 @@ def preprocess():
         list_of_pages.append(pagename)
 
     list_of_pages = list(set(list_of_pages))
-    list_of_illegal_pages = list(set(list_of_illegal_pages))
-    return list_of_pages, list_of_illegal_pages
-
+    return list_of_pages
 
 def generate_sidebar(list_of_pages):
     # generage Sidebar.md        
@@ -365,14 +341,13 @@ def generate_sidebar(list_of_pages):
         f.write("<!-- end_list_of_recent_updated_pages -->\n")
 
 
-def main(list_of_pages, list_of_illegal_pages):
+def main(list_of_pages):
     for filename in os.listdir(dir):
         if filename == ".git" : continue
 
         pagename = filename.split("/")[-1]
         pagename = pagename.split(".")[0]
         #print("main:"+pagename)
-
 
         # 自動リンク
         add_auto_link(filename, list_of_pages)
@@ -388,8 +363,8 @@ def main(list_of_pages, list_of_illegal_pages):
 
 
 if __name__=="__main__":
-    list_of_pages, list_of_illegal_pages = preprocess()
+    list_of_pages = preprocess()
     # sidebarを作る
     generate_sidebar(list_of_pages)
     
-    main(list_of_pages, list_of_illegal_pages)
+    main(list_of_pages)
