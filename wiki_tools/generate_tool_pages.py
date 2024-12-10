@@ -431,6 +431,8 @@ def main(list_of_pages, list_of_illegal_pages):
         generate_index_of_page(filename)
         # 子ページの一覧を生成
         generate_index_of_child_pages(filename, list_of_pages)
+        # 子ページの一覧を生成
+        generate_index_of_all_pages(filename, list_of_pages)
         # 違反ページ一覧を生成
         generate_list_of_illegal_pages(filename, list_of_illegal_pages)
 
