@@ -213,7 +213,7 @@ def add_auto_link(filename, list_of_pages):
 def replace_text_outside_markdown(text, target, replacement):
     # Markdownの記法に該当する部分（リンク、コード、太字、見出しなど）をパターン化
     markdown_patterns = [
-        r'<!--.+?start.+?-->*+?<!--.+?end.+?-->',        # コメント<!-- -->のstart endで囲まれたブロック
+#        r'<!--.+?start.+?-->*+?<!--.+?end.+?-->',        # コメント<!-- -->のstart endで囲まれたブロック
         r'<!--.+?-->',        # コメント<!-- -->
         r'\*\*[^\n\r]+?\*\*',        # **太字**
         r'\*[^\n\r]+?\*',            # *斜体*
