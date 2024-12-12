@@ -84,7 +84,7 @@ def generate_breadcrumbs(filename, list_of_pages):
         index_eol = data.index(eol)
     except Exception as e:
         data.insert(0, sol)
-        data.insert(1, eol)
+        data.insert(1, eol+"\n\n")
         index_sol = data.index(sol)
         index_eol = data.index(eol)
         
@@ -92,6 +92,8 @@ def generate_breadcrumbs(filename, list_of_pages):
     new_data = []
     new_data.extend(data[:index_sol+1])
     bar = "▶️ "
+    if pagename != "index":
+        bar += "[[index|index]] ▶️ "
     for pos, name in enumerate(pagename.split("_")):
         if "_".join(pagename.split("_")[:pos+1]) in list_of_pages:
             bar += "[["+name+"|"+"_".join(pagename.split("_")[:pos+1])+"]]"
