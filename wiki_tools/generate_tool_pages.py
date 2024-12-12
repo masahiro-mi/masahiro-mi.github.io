@@ -84,7 +84,9 @@ def generate_breadcrumbs(filename, list_of_pages):
         index_eol = data.index(eol)
     except Exception as e:
         data.insert(0, sol)
-        data.insert(1, eol+"\n\n")
+        data.insert(1, eol)
+        data.insert(2, "")
+        
         index_sol = data.index(sol)
         index_eol = data.index(eol)
         
