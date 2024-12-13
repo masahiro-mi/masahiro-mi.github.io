@@ -95,10 +95,11 @@ def generate_breadcrumbs(filename, list_of_pages):
     new_data.extend(data[:index_sol+1])
     bar = "▶️ "
     if pagename != "index":
-        bar += "[[index|index]] ▶️ "
+        bar += "[Index]("+base_url+"index) ▶️ "
     for pos, name in enumerate(pagename.split("_")):
         if "_".join(pagename.split("_")[:pos+1]) in list_of_pages:
-            bar += "[["+name+"|"+"_".join(pagename.split("_")[:pos+1])+"]]"
+            bar += "["+name+"]("+base_url+"_".join(pagename.split("_")[:pos+1])+")"
+
         else:
             bar += name
         if pos < len(pagename.split("_")) - 1 :
@@ -207,20 +208,30 @@ def add_auto_link(filename, list_of_pages):
     new_data = data
 
     # 正規表現: マッチして置換
+    # 古いパターンのautolink tag
+    # この書き方だと箇条書きの先頭がautolinkになった場合にうまく表記されない
     pattern = r"<!--start_autolink-->\[(.*?)\]\(.*?\)<!--end_autolink-->"
     replacement = r"\1"  # キャプチャグループ1 (括弧内のテキスト) に置換
     new_data = re.sub(pattern, replacement, new_data)
+    
+    # 正規表現: マッチして置換
+    # 古いパターンのautolink tag
+    # この書き方だと箇条書きの先頭がautolinkになった場合にうまく表記されない
+    pattern = r"\[(.*?)\]\(.*?\)<!--add_autolink-->"
+    replacement = r"\1"  # キャプチャグループ1 (括弧内のテキスト) に置換
+    new_data = re.sub(pattern, replacement, new_data)
+    
 
     # ページ名に一致するならリンクする
     for entity, link in sorted(entites.items(), key=lambda x:len(x[0]), reverse=True):
         #print(entity, link)
-        new_data = replace_text_outside_markdown(new_data, entity, "<!--start_autolink-->["+entity+"]("+base_url+link+")<!--end_autolink-->")
+        new_data = replace_text_outside_markdown(new_data, entity, "["+entity+"]("+base_url+link+")<!--add_autolink-->")
     
     if data != new_data:
         with open(dir+"/"+filename, "w") as f:
             f.writelines(new_data)
 
-    print(data)
+#    print(data)
 
     return
 
