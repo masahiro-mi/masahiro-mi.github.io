@@ -269,7 +269,7 @@ def replace_text_outside_markdown(text, target, replacement):
     text = re.sub(fr'(?<!\w){re.escape(target)}(?!\w)', replacement, text)
     #print("replaced", text)
     # プレースホルダを元のMarkdown部分に戻す
-    for i, placeholder_text in enumerate(placeholders):
+    for i, placeholder_text in enumerate(reversed(placeholders)):
         placeholder = '<PLACEHOLDER-'+str(i)+'>'  # 特殊な文字
         text = text.replace(placeholder, placeholder_text, 1)
     #print("restored", text)
