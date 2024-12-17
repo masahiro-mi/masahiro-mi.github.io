@@ -270,7 +270,7 @@ def replace_text_outside_markdown(text, target, replacement):
     #print("replaced", text)
     # プレースホルダを元のMarkdown部分に戻す
     for i, placeholder_text in enumerate(reversed(placeholders)):
-        placeholder = '<PLACEHOLDER-'+str(i)+'>'  # 特殊な文字
+        placeholder = '<PLACEHOLDER-'+str(len(placeholders) - i - 1)+'>'  # 特殊な文字（適宜変更可能）
         text = text.replace(placeholder, placeholder_text, 1)
     #print("restored", text)
     return text
