@@ -93,9 +93,9 @@ def generate_breadcrumbs(filename, list_of_pages):
 
     new_data = []
     new_data.extend(data[:index_sol+1])
-    bar = "> "
+    bar = ""
     if pagename != "index":
-        bar += "[Index]("+base_url+"index) ▶️ "
+        bar += "[Index]("+base_url+"index) > "
     for pos, name in enumerate(pagename.split("_")):
         if "_".join(pagename.split("_")[:pos+1]) in list_of_pages:
             bar += "["+name+"]("+base_url+"_".join(pagename.split("_")[:pos+1])+")"
