@@ -149,8 +149,8 @@ def generate_footer(filename):
 
     footer = []
 
-    footer.append("-----")
-    footer.append("[:pen:](https://github.com/masahiro-mi/masahiro-mi.github.io/wiki/"+pagename+"/_edit) / [:site:]("+base_url+pagename+"/_edit) / [:wiki:](https://github.com/masahiro-mi/masahiro-mi.github.io/wiki/"+pagename+")")
+    footer.append("-----\n")
+    footer.append("[:link:]("+base_url+pagename+"/_edit) / [:memo:](https://github.com/masahiro-mi/masahiro-mi.github.io/wiki/"+pagename+") / [:pen:](https://github.com/masahiro-mi/masahiro-mi.github.io/wiki/"+pagename+"/_edit)\n")
 
     # sidebar等は追加しない
     if pagename[0] != "_":
