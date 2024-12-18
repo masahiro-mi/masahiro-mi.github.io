@@ -135,6 +135,7 @@ def generate_footer(filename):
         index_sol = data.index(sol)
         index_eol = data.index(eol)
     except Exception as e:
+        data.append("")
         data.append(sol)
         data.append(eol)
         data.append("")
