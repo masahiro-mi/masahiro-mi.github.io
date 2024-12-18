@@ -93,7 +93,7 @@ def generate_breadcrumbs(filename, list_of_pages):
 
     new_data = []
     new_data.extend(data[:index_sol+1])
-    bar = "▶️ "
+    bar = "> "
     if pagename != "index":
         bar += "[Index]("+base_url+"index) ▶️ "
     for pos, name in enumerate(pagename.split("_")):
@@ -103,7 +103,7 @@ def generate_breadcrumbs(filename, list_of_pages):
         else:
             bar += name
         if pos < len(pagename.split("_")) - 1 :
-            bar += " ▶️ "
+            bar += " > "
     
     # sidebar等は追加しない
     if pagename[0] != "_":
@@ -115,6 +115,53 @@ def generate_breadcrumbs(filename, list_of_pages):
     if data != new_data:
         with open(dir+"/"+filename, "w") as f:
             f.writelines(new_data)
+
+
+
+def generate_footer(filename):
+    #print(filename)
+
+    pagename = filename.split("/")[-1]
+    pagename = pagename.split(".")[0]
+
+    sol = '<!-- start_footer -->\n'
+    eol = '<!-- end_footer -->\n'
+
+    data = []
+    with open(dir+"/"+filename) as f:
+        data = f.readlines()
+
+    try:
+        index_sol = data.index(sol)
+        index_eol = data.index(eol)
+    except Exception as e:
+        data.append(sol)
+        data.append(eol)
+        data.append("")
+        
+        index_sol = data.index(sol)
+        index_eol = data.index(eol)
+        
+
+    new_data = []
+    new_data.extend(data[:index_sol+1])
+
+
+    footer = []
+
+    footer.append("-----")
+    footer.append("[:pen:](https://github.com/masahiro-mi/masahiro-mi.github.io/wiki/"+pagename+"/_edit) / [:site:]("+base_url+pagename+"/_edit) / [:wiki:](https://github.com/masahiro-mi/masahiro-mi.github.io/wiki/"+pagename+")")
+
+    # sidebar等は追加しない
+    if pagename[0] != "_":
+        new_data.extend(footer)
+
+    new_data.extend(data[index_eol:])
+
+    if data != new_data:
+        with open(dir+"/"+filename, "w") as f:
+            f.writelines(new_data)
+
 
 def generate_index_of_child_pages(filename, list_of_pages):
     print("generate_index_of_child_pages:", filename)
@@ -368,7 +415,7 @@ def main(list_of_pages):
 
         # 自動リンク
         add_auto_link(filename, list_of_pages)
-        # 自動リンク
+        # パンくずナビゲーションバーを生成
         generate_breadcrumbs(filename, list_of_pages)
         # ページの目次を生成
         generate_index_of_page(filename)
@@ -376,6 +423,8 @@ def main(list_of_pages):
         generate_index_of_child_pages(filename, list_of_pages)
         # 子ページの一覧を生成
         generate_index_of_all_pages(filename, list_of_pages)
+        # footerを生成
+        generate_footer(filename)
 
 
 
