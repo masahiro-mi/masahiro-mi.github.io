@@ -357,7 +357,7 @@ def preprocess():
         with open(config["dir"]+"/"+filename) as f:
             list_of_linked_pages.extend(find_link(f.readlines()))
 
-    for filename in os.listdir["dir"](config["dir"]):
+    for filename in os.listdir(config["dir"]):
         if filename[0] == "." : continue
         # .git以外に.gitignoreも排除するために頭文字が.の場合は対象にしないよう変更
         if ".md" not in filename: continue
