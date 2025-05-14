@@ -50,7 +50,7 @@ def generate_index_of_page(filename):
     eol = '<!-- end_index_of_page -->\n'
 
     data = []
-    with open(dir+"/"+filename) as f:
+    with open(config["dir"]+"/"+filename) as f:
         data = f.readlines()
 
     try:
@@ -75,7 +75,7 @@ def generate_index_of_page(filename):
 
             list_of_h.append( "  " * (depth - min_depth) + "* " + link_text(+section_name, pagename, hash=section_hash)+"\n" )
 
-    with open(dir+"/"+filename, "w") as f:
+    with open(config["dir"]+"/"+filename, "w") as f:
         f.writelines(data[:index_sol+1])
         f.writelines(list_of_h)
         f.writelines(data[index_eol:])
@@ -90,7 +90,7 @@ def generate_index_of_child_pages(filename, list_of_pages):
     eol = '<!-- end_index_of_child_pages -->\n'
 
     data = []
-    with open(dir+"/"+filename) as f:
+    with open(config["dir"]+"/"+filename) as f:
         data = f.readlines()
 
     try:
@@ -111,7 +111,7 @@ def generate_index_of_child_pages(filename, list_of_pages):
     new_data.extend(data[index_eol:])
 
     if data != new_data:
-        with open(dir+"/"+filename, "w") as f:
+        with open(config["dir"]+"/"+filename, "w") as f:
             f.writelines(new_data)
 
 def generate_list_of_illegal_pages(filename, list_of_illegal_pages):
@@ -123,7 +123,7 @@ def generate_list_of_illegal_pages(filename, list_of_illegal_pages):
     eol = '<!-- end_list_of_illegal_named_pages -->\n'
 
     data = []
-    with open(dir+"/"+filename) as f:
+    with open(config["dir"]+"/"+filename) as f:
         data = f.readlines()
 
     try:
@@ -139,7 +139,7 @@ def generate_list_of_illegal_pages(filename, list_of_illegal_pages):
     new_data.extend(data[index_eol:])
 
     if data != new_data:
-        with open(dir+"/"+filename, "w") as f:
+        with open(config["dir"]+"/"+filename, "w") as f:
             f.writelines(new_data)
 
 
@@ -153,7 +153,7 @@ def generate_breadcrumbs(filename, list_of_pages):
     eol = '<!-- end_breadcrumbs -->\n'
 
     data = []
-    with open(dir+"/"+filename) as f:
+    with open(config["dir"]+"/"+filename) as f:
         data = f.readlines()
 
     try:
@@ -189,7 +189,7 @@ def generate_breadcrumbs(filename, list_of_pages):
     new_data.extend(data[index_eol:])
 
     if data != new_data:
-        with open(dir+"/"+filename, "w") as f:
+        with open(config["dir"]+"/"+filename, "w") as f:
             f.writelines(new_data)
 
 
@@ -206,7 +206,7 @@ def add_auto_link(filename, list_of_pages):
         except:
             pass
 
-    with open(dir+"/"+filename) as f:
+    with open(config["dir"]+"/"+filename) as f:
         data = "".join(f.readlines())
     new_data = data
 
@@ -238,10 +238,9 @@ def add_auto_link(filename, list_of_pages):
     # ページ名に一致するならリンクする
     for entity, link in sorted(entites.items(), key=lambda x:len(x[0]), reverse=True):
         #print(entity, link)
-#        new_data = replace_text_outside_markdown(new_data, entity, "["+entity+"]("+base_url+link+")<!--add_autolink-->")
         new_data = replace_text_outside_markdown(new_data, entity, link_text(entity, link)+"<!--add_autolink-->")
     if data != new_data:
-        with open(dir+"/"+filename, "w") as f:
+        with open(config["dir"]+"/"+filename, "w") as f:
             f.writelines(new_data)
     
     return
@@ -348,17 +347,17 @@ def preprocess():
 
     # リンク先ページの一覧を取得
     list_of_linked_pages = []
-    for filename in os.listdir(dir):
+    for filename in os.listconfig["dir"](config["dir"]):
         if filename[0] == "." : continue
         # .git以外に.gitignoreも排除するために頭文字が.の場合は対象にしないよう変更
         if ".md" not in filename: continue
         # markdonw以外のファイルも対象外にする
 
 #        print("Preprocess:"+filename)
-        with open(dir+"/"+filename) as f:
+        with open(config["dir"]+"/"+filename) as f:
             list_of_linked_pages.extend(find_link(f.readlines()))
 
-    for filename in os.listdir(dir):
+    for filename in os.listconfig["dir"](config["dir"]):
         if filename[0] == "." : continue
         # .git以外に.gitignoreも排除するために頭文字が.の場合は対象にしないよう変更
         if ".md" not in filename: continue
@@ -400,7 +399,7 @@ def preprocess():
 def add_notification_message(filename, message):
 
     eol = '<!-- end_notification_message -->\n'
-    with open(dir+"/"+filename) as f:
+    with open(config["dir"]+"/"+filename) as f:
         data = f.readlines()
 
     new_data = data
@@ -418,13 +417,13 @@ def add_notification_message(filename, message):
     new_data.insert(0, insert_message)
 
     if data != new_data:
-        with open(dir+"/"+filename, "w") as f:
+        with open(config["dir"]+"/"+filename, "w") as f:
             f.writelines(new_data)
         
 def delete_notification_message(filename):
 
     eol = '<!-- end_notification_message -->\n'
-    with open(dir+"/"+filename) as f:
+    with open(config["dir"]+"/"+filename) as f:
         data = f.readlines()
 
     new_data = data
@@ -435,7 +434,7 @@ def delete_notification_message(filename):
         pass
     
     if data != new_data:
-        with open(dir+"/"+filename, "w") as f:
+        with open(config["dir"]+"/"+filename, "w") as f:
             f.writelines(new_data)
 
 def generate_sidebar(list_of_pages):
@@ -444,7 +443,7 @@ def generate_sidebar(list_of_pages):
         sidebar = json.load(f)
 
     #print(sidebar)
-    with open(dir+"/_Sidebar.md", "w") as f:
+    with open(config["dir"]+"/_Sidebar.md", "w") as f:
         f.write("# メニュー\n")
 
         for index, max_depth in sidebar["sidebar_sort"].items():
@@ -477,7 +476,7 @@ def generate_sidebar(list_of_pages):
 def main():
     list_of_pages, list_of_illegal_pages = preprocess()
 
-    for filename in os.listdir(dir):
+    for filename in os.listconfig["dir"](config["dir"]):
         # 処理対象外ファイルの設定
         # .git以外に.gitignoreも排除するために頭文字が.の場合は対象にしないよう変更
         if filename[0] == "." : continue
