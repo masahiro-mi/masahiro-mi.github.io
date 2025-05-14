@@ -1,0 +1,14 @@
+{
+    "dir":"./.wiki",
+    "url":"https://individuality.jp/wiki/",
+    "structure":"./wiki_scripts/config/structure.json",
+    "sidebar":"./wiki_scripts/config/sidebar.json",
+    "link_style":"wiki",
+    "check_structure":false,
+    "add_recent":true,
+    "num_recent":10,
+    "add_breadcrumbs":true,
+    "add_auto_link":true,
+    "add_index_of_pages":true
+
+}
