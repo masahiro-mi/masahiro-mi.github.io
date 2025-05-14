@@ -5,7 +5,7 @@ import subprocess
 from urllib.parse import unquote
 
 
-with open("./wiki_scripts/config/setting.json") as f:
+with open("./wiki_tools/config/setting.json") as f:
     config = json.load(f)
 
 with open(config["structure"]) as f:
