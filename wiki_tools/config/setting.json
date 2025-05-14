@@ -3,7 +3,7 @@
     "url":"https://individuality.jp/wiki/",
     "structure":"./wiki_tools/config/structure.json",
     "sidebar":"./wiki_tools/config/sidebar.json",
-    "link_style":"wiki",
+    "link_style":"global",
     "check_structure":false,
     "add_recent":true,
     "num_recent":10,
