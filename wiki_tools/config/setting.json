@@ -5,10 +5,11 @@
     "sidebar":"./wiki_tools/config/sidebar.json",
     "link_style":"global",
     "check_structure":false,
-    "add_recent":true,
-    "num_recent":10,
+    "generate_sidebar":true,
     "add_breadcrumbs":true,
     "add_auto_link":true,
-    "add_index_of_pages":true
+    "add_index_of_pages":true,
+    "add_recent":true,
+    "num_recent":10
 
 }
