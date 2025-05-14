@@ -175,7 +175,7 @@ def generate_breadcrumbs(filename, list_of_pages):
         bar += link_text("Home", "Home")+" > "
         for pos, name in enumerate(pagename.split("_")):
             if "_".join(pagename.split("_")[:pos+1]) in list_of_pages:
-                bar += link_text(name, "_".join(pagename.split("_")[:pos+1])+")"
+                bar += link_text(name, "_".join(pagename.split("_")[:pos+1]))
             else:
                 bar += name
             if pos < len(pagename.split("_")) - 1 :
