@@ -347,7 +347,7 @@ def preprocess():
 
     # リンク先ページの一覧を取得
     list_of_linked_pages = []
-    for filename in os.listconfig["dir"](config["dir"]):
+    for filename in os.listdir(config["dir"]):
         if filename[0] == "." : continue
         # .git以外に.gitignoreも排除するために頭文字が.の場合は対象にしないよう変更
         if ".md" not in filename: continue
@@ -357,7 +357,7 @@ def preprocess():
         with open(config["dir"]+"/"+filename) as f:
             list_of_linked_pages.extend(find_link(f.readlines()))
 
-    for filename in os.listconfig["dir"](config["dir"]):
+    for filename in os.listdir["dir"](config["dir"]):
         if filename[0] == "." : continue
         # .git以外に.gitignoreも排除するために頭文字が.の場合は対象にしないよう変更
         if ".md" not in filename: continue
@@ -476,7 +476,7 @@ def generate_sidebar(list_of_pages):
 def main():
     list_of_pages, list_of_illegal_pages = preprocess()
 
-    for filename in os.listconfig["dir"](config["dir"]):
+    for filename in os.listdir(config["dir"]):
         # 処理対象外ファイルの設定
         # .git以外に.gitignoreも排除するために頭文字が.の場合は対象にしないよう変更
         if filename[0] == "." : continue
