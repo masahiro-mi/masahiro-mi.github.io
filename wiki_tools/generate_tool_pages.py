@@ -326,6 +326,40 @@ class WikiToolGenerator:
 
         return
 
+    def replace_text_outside_markdown(self, text, target, replacement):
+        """Replaces occurrences of target with replacement outside Markdown code blocks."""
+        markdown_patterns = [
+            r'```(?:.*?\n)?[\s\S]*?```',    # コードブロック（複数行対応）
+            r'`[^\n\r]+?`',              # インラインコード
+            r'\[.*?\]\(.*?\)',     # リンク記法 [テキスト](URL)
+            r'\[\[.*?\]\]',     # リンク記法 [テキスト](URL)
+            r'!\[.*?\]\(.*?\)',    # 画像リンク記法 ![alt](URL)
+            r'\[\[(.*?)\|(.*?)\]\]',    # リンク記法 [[alt|alt]]
+            r'^#+ [^\n\r]+?$',             # 見出し記法（# 見出し）
+            r'\|.*?\|',             # テーブル
+            r'<!--.+?-->',        # コメント<!-- -->
+            r'\*\*[^\n\r]+?\*\*',        # **太字**
+            r'\*[^\n\r]+?\*',            # *斜体*
+        ]
+
+        placeholders = []
+
+        def placeholder_replacer(match):
+            placeholder = f'<PLACEHOLDER-{len(placeholders)}>'
+            placeholders.append(match.group(0))
+            return placeholder
+
+        for pattern in markdown_patterns:
+            text = re.sub(pattern, placeholder_replacer, text, flags=re.MULTILINE)
+
+        text = re.sub(fr'(?<!\w){re.escape(target)}(?!\w)', replacement, text)
+
+        for i, placeholder_text in enumerate(reversed(placeholders)):
+            placeholder = f'<PLACEHOLDER-{len(placeholders) - i - 1}>'
+            text = text.replace(placeholder, placeholder_text, 1)
+
+        return text
+
 
 def main():
     generator = WikiToolGenerator("./wiki_tools/config/setting.json")
