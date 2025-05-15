@@ -287,6 +287,45 @@ class WikiToolGenerator:
 
         return list_of_linked_pages
 
+    def add_auto_link(self, filename, list_of_pages):
+        """Automatically adds links to other pages in the content."""
+        print("###add_auto_link:", filename)
+        entities = {}
+        for pagename in sorted(list_of_pages, key=lambda x: len(x)):
+            try:
+                entity = pagename.split("_")[-1]
+                if len(entity) <= 1:
+                    continue
+                if entity in entities.keys():
+                    continue
+                entities[entity] = pagename
+            except Exception:
+                pass
+
+        with open(f"{self.config['dir']}/{filename}") as f:
+            data = "".join(f.readlines())
+        new_data = data
+
+        # Replace old autolink patterns
+        patterns = [
+            (r"<!--start_autolink-->\[(.*?)\]\(.*?\)<!--end_autolink-->", r"\1"),
+            (r"\[(.*?)\]\(.*?\)<!--add_autolink-->", r"\1"),
+            (r"\[\[(.*?)\|(.*?)\]\]<!--add_autolink-->", r"\1")
+        ]
+
+        for pattern, replacement in patterns:
+            new_data = re.sub(pattern, replacement, new_data)
+
+        # Add new autolinks for matching page names
+        for entity, link in sorted(entities.items(), key=lambda x: len(x[0]), reverse=True):
+            new_data = self.replace_text_outside_markdown(new_data, entity, self.link_text(entity, link) + "<!--add_autolink-->")
+
+        if data != new_data:
+            with open(f"{self.config['dir']}/{filename}", "w") as f:
+                f.writelines(new_data)
+
+        return
+
 
 def main():
     generator = WikiToolGenerator("./wiki_tools/config/setting.json")
