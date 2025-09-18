@@ -117,19 +117,46 @@ class WikiToolGenerator:
         new_data = data[:index_sol + 1]
         bar = ""
         if pagename != "Home":
-            bar += self.link_text("Home", "Home") + " > "
+            bar += self.link_text("Index", "index") + " → "
             for pos, name in enumerate(pagename.split("_")):
                 if "_".join(pagename.split("_")[:pos + 1]) in list_of_pages:
                     bar += self.link_text(name, "_".join(pagename.split("_")[:pos + 1]))
                 else:
                     bar += name
                 if pos < len(pagename.split("_")) - 1:
-                    bar += " > "
+                    bar += " → "
 
         if pagename[0] != "_":
             bar += "\n"
             new_data.append(bar)
 
+        new_data.extend(data[index_eol:])
+
+        if data != new_data:
+            with open(f"{self.config['dir']}/{filename}", "w") as f:
+                f.writelines(new_data)
+
+    
+    def generate_footer(self, filename):
+        pagename = filename.split("/")[-1].split(".")[0]
+
+        sol, eol = '<!-- start_footer -->\n', '<!-- end_footer -->\n'
+
+        with open(f"{self.config['dir']}/{filename}") as f:
+            data = f.readlines()
+
+        try:
+            index_sol, index_eol = data.index(sol), data.index(eol)
+        except ValueError:
+            data.insert(-1, sol)
+            data.insert(-1, eol)
+            data.insert(-1, "")
+            index_sol, index_eol = data.index(sol), data.index(eol)
+
+        new_data = data[:index_sol + 1]
+        footer = ""
+        footer += "-----\n"
+        footer += "[:link:Site](https://individuality.jp/wiki/"+filename+") / [:pen:Edit](https://github.com/masahiro-mi/masahiro-mi.github.io/wiki/"+filename+"/_edit)"
         new_data.extend(data[index_eol:])
 
         if data != new_data:
@@ -375,6 +402,8 @@ def main():
             generator.generate_breadcrumbs(filename, list_of_pages)
         if generator.config["add_auto_link"]:
             generator.add_auto_link(filename, list_of_pages)
+        if generator.config["add_footer"]:
+            generator.generate_footer(filename)
         if generator.config["check_structure"]:
             generator.generate_list_of_illegal_pages(filename, list_of_illegal_pages)
         if generator.config["add_index_of_pages"]:
@@ -383,4 +412,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
