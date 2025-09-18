@@ -8,8 +8,10 @@
     "generate_sidebar":true,
     "add_breadcrumbs":true,
     "add_auto_link":true,
+    "add_footer":true,
     "add_index_of_pages":true,
     "add_recent":true,
     "num_recent":10
+
 
 }
