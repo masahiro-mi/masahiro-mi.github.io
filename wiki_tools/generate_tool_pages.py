@@ -116,8 +116,8 @@ class WikiToolGenerator:
 
         new_data = data[:index_sol + 1]
         bar = ""
-        if pagename != "Home":
-            bar += self.link_text("Index", "index") + " → "
+        if pagename != "Index":
+            bar += self.link_text("Index", "Index") + " → "
             for pos, name in enumerate(pagename.split("_")):
                 if "_".join(pagename.split("_")[:pos + 1]) in list_of_pages:
                     bar += self.link_text(name, "_".join(pagename.split("_")[:pos + 1]))
@@ -414,3 +414,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
