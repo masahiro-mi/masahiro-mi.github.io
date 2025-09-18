@@ -5,7 +5,10 @@
 exclude:
   - node_modules
   - script
-
+  
+plugins:
+  - jemoji
+  
 sass:
   style: :compressed
 
