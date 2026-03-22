@@ -3,12 +3,7 @@ name: Update-wiki
 on:
 #  wikiが更新されるたび
   gollum:
-#  schedule:
-#    # 10分おきに実行
-#    - cron: '*/10 * * * *'
   workflow_dispatch:
-  schedule:
-    - cron: '0 */6 * * *'
 
 permissions:
   contents: write
